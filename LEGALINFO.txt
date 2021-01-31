@@ -217,3 +217,12 @@ ROGIERS Wizard Application property
 -------------------------------------------------------------------------------------------------------------------------------
 
 2020-2021 - Created by Daan Verhoost.
+
+DISCLAIMER
+
+Dit installatiepakket werd ontworpen door ROGIERS (BU software) en is 
+uitsluitend bedoeld als installatiehulp bij nieuwe computertoestellen. 
+De eindgebruiker is er zich bewust van dat deze software op geen enkele
+manier kan aansprakelijk gesteld worden voor computer problemen als 
+gevolg van het gebruik. ROGIERS heeft ten allen tijde het recht de broncode 
+van dit pakket te wijzigen. 
