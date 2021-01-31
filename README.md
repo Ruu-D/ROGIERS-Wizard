@@ -1,4 +1,6 @@
-# ROGIERS-Wizard Main purpose
+# ROGIERS-Wizard 
+
+# Main purpose - Hoofddoel
 ### EN
   **'Inno Setup' installation wizard for easily implementing frequently used programs and files on new computers.**
 ### NL
@@ -6,7 +8,7 @@
   
   
   
-# Installation
+# Installation - Installatie
 ### EN
   The compiled '.exe' is used as an **installation wizard** to **perform repeated tasks on new Windows computers in an automated manner**
   It's very *similar to a '7Zip-self-extracting-executable'*, as it's main purpose is to extract several files in "C:\ROGIERS".
@@ -18,7 +20,7 @@
   
   
   
-# Usage
+# Usage - Gebruik
 ### EN
   Running the installer will prompt several 'checkbox' options for the user to run Powershell scripts or perform background installations of software.
   The installation procedure is divided in 2 main versions : "Volledige installatie   (internet vereist)" and "Essentiële bestanden".
@@ -29,7 +31,7 @@
   Bij installatie van het eerste type, worden meerdere apps geïnstalleerd via 'Chocolatey package manager'.
   
   
-# Screenshots
+# Screenshots - Afbeeldingen
 ![GitHub Logo](/GRAPHICS/SCREENSHOTS/WelcomeScreen.png)
 
 ![GitHub Logo](/GRAPHICS/SCREENSHOTS/TaskSelection.png)
