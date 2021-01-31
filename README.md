@@ -1,5 +1,8 @@
 # ROGIERS-Wizard 
 
+![GitHub Logo](/GRAPHICS/GitHub/Banner.png)
+
+
 # Main purpose - Hoofddoel
 ### EN
   **'Inno Setup' installation wizard for easily implementing frequently used programs and files on new computers.**
@@ -42,9 +45,9 @@
 # Screenshots - Afbeeldingen
 
 ### Download page - Download pagina
-![GitHub Logo](/GRAPHICS/SCREENSHOTS/MegaDownload.png)
+![GitHub Logo](/GRAPHICS/GitHub/MegaDownload.png)
 
 ### Application in use - Programma in werking
-![GitHub Logo](/GRAPHICS/SCREENSHOTS/WelcomeScreen.png)
+![GitHub Logo](/GRAPHICS/GitHub/WelcomeScreen.png)
 
-![GitHub Logo](/GRAPHICS/SCREENSHOTS/TaskSelection.png)
+![GitHub Logo](/GRAPHICS/GitHub/TaskSelection.png)
