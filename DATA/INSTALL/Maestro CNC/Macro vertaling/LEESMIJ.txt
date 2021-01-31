@@ -1,0 +1,4 @@
+Vertaling voor Maestro REL. 1.00.014.1021 of later
+
+Indien klant reeds vertaalde apps had beter de vertaalde configuration file uit de vorige installatie te gebruiken omdat hierin
+ook de 'door de klant toegevoegde' groepen aanwezig zijn. Anders komt alle inhoud hieruit onder bewerkingen terecht.

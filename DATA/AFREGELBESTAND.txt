@@ -1,0 +1,188 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+AFREGELBESTAND --- 2021 Rogiers - Vanpoucke NV/SA
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Technieker :  Naam van technieker
+Datum : 2021.00.00
+Klant : XXX
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Binnenmagazijn:
+***************
+-> Controle mechanisch X richting: Tool vooraan en achteraan laden en indien nodig met de regelbouten in lijn brengen. 
+-> Vastzetten Bouten geleidingen magazijn met locitite. 
+-> Y en Z Afregelen in Basemenu 'Editor shared' > 'Parametri' > 'Sistema' > 'Configura PLC' > 'TOOL CHANGE TR LEFT'.
+		  	  |
+		(PASSLOGIN EN PASWOORD)
+
+1:	Y: -1381.10	ok	Z: -39.00 naar -41.00				
+2:	Y: -1271.10	ok	Z: -39.30 naar -41.00		
+3:	Y: -1161.10	ok	Z: -39.60 naar -41.50		
+4:	Y: -1051.10	ok	Z: -39.80 naar -41.50	
+5:	Y: -941.10	ok	Z: -39.90 naar -41.70	
+6:	Y: -831.10	ok	Z: -40.20 naar -41.80	
+7:	Y: -721.10	ok	Z: -40.05 naar -41.70	
+8:	Y: -521.15	ok	Z: -40.50 naar -41.50	
+9:	Y: -391.10	ok	Z: -40.45 naar -41.50
+10:	Y: -261.10	ok	Z: -40.25 naar -41.00
+11:	Y: -131.10	ok	Z: -40.00 naar -40.50
+12:	Y: -1.00		ok	Z: -39.25 naar -40.00
+13:	Y: -128.90	ok	Z: -39.70 naar -40.00
+14:	Y: -258.90	ok	Z: -39.30 naar -40.00
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Opmeten Frees:
+**************
+-> 3 Asser = Freeslengte meten, lijntje frezen en de freeslengte aanpassen bij afwijking. 
+Wanneer je de correcte afmetingen weet van de frezen kan je werken zoals een 5 asser en aanpassen in BaseMenu.
+
+-> 5 Asser = Freeslengte opmeten met comparator en de encoderwaarde Z-as aanpassen in Basemenu
+
+BASEMENU:
+Nieuwe machines:	'Editor shared' > 'Parametri' > 'Sistema' > 'Ethercat' > 'Ecat Node' > '[4] - Z1...' > 'HOME OFFSET'
+Oude machines: 	'Editor shared' > 'Parametri' > 'Sistema' > 'Axes Parameters' > '[2] - Z1...' > 'pn 808'
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Freeslengte meting:
+*******************
+-> Na het opmeten van de freeslengte de lengte meting aanpassen indien nodig zodat de gemeten waarde overeen komt met de uwe.
+-> Aanpassen Z positie in 'Toolprobe' en 'PHEAD 3'!
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Diktetaster:
+************
+-> Meetgereedschap aanmaken in de toollijst.
+-> In MActive toevoegen onder 'Handmatige koppen'.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Boor vs Frees:
+**************
+-> Aanpassen in Cfgx file. 'Configuration' > 'Machina' > 'Heads' > 'Foratrice F23L' > 'Setup 0 axis X/Y' 
+	->OPGELET!! als de machine werkt op het netwerk kan het zijn dat de cfgx file ook op het netwerk staat.
+
+
+X: van +32.05 	naar +32.11
+Y: van -342.86	naar -342.81
+////////////////////////////
+
+
+
+Velden:
+*******
+-> Aanpassen in Cfgx file. 'Configuration' > 'Machina' > 'Working area' > 'A-L' > 'X/Y Coordinate' 
+	->OPGELET!! als de machine werkt op het netwerk kan het zijn dat de cfgx file ook op het netwerk staat.
+
+A:
+--
+X van -3110.00 	naar -3109.70
+Y van +0.00	naar -0.50
+
+
+D:
+--
+X van +0.00	naar -0.25
+Y van +0.00	naar -0.50
+
+
+I:
+--
+X van -3110.00 	naar -3109.60
+Y van -650.00	naar -650.40
+
+
+L:
+--
+X van +0.00 	naar -0.30
+Y van -650.00	naar -650.45
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Horizontale Boringen:
+*********************
+-> Aanpassen in Cfgx file. 'Configuration' > 'Machina' > 'Heads' > 'Foratrice F23L' > 'Mandrino 52/53,...' > 'X/Y/Z Offset'
+	-> OPGELET!! als de machine werkt op het netwerk kan het zijn dat de cfgx file ook op het netwerk staat.
+	-> OPGELET!! wanneer de taal in het nederlands staat kan het zijn dat de vertalingen niet juist zijn. 'OFFSET Z' = 'Mechanische opties'. ALTIJD IN HET ENGELS AFREGELEN!!!
+
+52 - 53:
+--------
+Y: van 0.00 	naar -1.50
+Z: van -54.93 	naar -55.10
+
+
+62 - 63:
+--------
+Y: van -32.00 	naar -33.50
+Z: van -54.93 	naar -55.10
+
+
+72 - 73:
+--------
+Y: van -64.00 	naar -65.50
+Z: van -54.93 	naar -55.10
+
+
+54 - 55:
+--------
+X: van -31.92 	naar -33.20
+
+
+54:
+Z: van -54.95 	naar -55.15
+
+55:
+Z: van -55.00	naar -55.40
+
+
+64 - 65:
+--------
+X: van -63.92 	naar -65.20
+
+64:
+Z: van -54.95 	naar -55.15
+
+65:
+Z: van -55.00	naar -55.40
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Boordiepte:
+***********
+-> Elk boor controleren op diepte en indien nodig de lengte van de boor aanpassen.
+
+
+Zaag 66:
+
+-> Aanpassen in Cfgx file. 'Configuration' > 'Machina' > 'Heads' > 'Foratrice F23L' > 'Mandrino 66' > 'X/Y/Z Offset'
+	-> OPGELET!! als de machine werkt op het netwerk kan het zijn dat de cfgx file ook op het netwerk staat.
+	-> OPGELET!! wanneer de taal in het nederlands staat kan het zijn dat de vertalingen niet juist zijn. 'OFFSET Z' = 'Mechanische opties'. ALTIJD IN HET ENGELS AFREGELEN!!!
+
+Y van -159.39	naar -159.89
+Z van +7.45 	naar +6.75
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Kruislaser:
+***********
+-> Aanpassen in Cfgx file. 'Configuration' > 'Machina' > 'Heads' > 'Testa Laser standard SX' > 'Setup 0 axis X/Y'
+	-> OPGELET!! als de machine werkt op het netwerk kan het zijn dat de cfgx file ook op het netwerk staat.
+
+X: van -912.00 	naar -913.00
+Y: van -162.00	naar -159.80
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+

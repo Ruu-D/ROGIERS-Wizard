@@ -1,0 +1,185 @@
+Starting compile.  [zondag, januari 31 2021 at 11:46:09]
+Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
+
+[PreCompile] Processing.
+[PreCompile] Processing is still being tested.
+[PreCompile] Processing finished.
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 35
+Parsing [Setup] section, line 36
+Parsing [Setup] section, line 37
+Parsing [Setup] section, line 38
+Parsing [Setup] section, line 39
+Parsing [Setup] section, line 40
+Parsing [Setup] section, line 41
+Parsing [Setup] section, line 42
+Parsing [Setup] section, line 43
+Parsing [Setup] section, line 44
+Parsing [Setup] section, line 45
+Parsing [Setup] section, line 46
+Parsing [Setup] section, line 47
+Parsing [Setup] section, line 48
+Parsing [Setup] section, line 49
+Reading file (WizardImageFile)
+   File: C:\ROGIERS Wizard v21\.\GRAPHICS\ROGIERS_WELCOME.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\ROGIERS Wizard v21\.\GRAPHICS\InstallWizardSmall.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+   Updating version info (SETUP.E32)
+Determining language code pages
+Parsing [Languages] section, line 69
+   File: C:\Program Files (x86)\Inno Setup 6\Languages\Dutch.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 69
+   File: C:\Program Files (x86)\Inno Setup 6\Languages\Dutch.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Types] section, line 52
+Parsing [Types] section, line 53
+Parsing [Components] section, line 56
+Parsing [Components] section, line 57
+Parsing [Components] section, line 58
+Parsing [Tasks] section, line 61
+Parsing [Tasks] section, line 62
+Parsing [Tasks] section, line 63
+Parsing [Tasks] section, line 64
+Parsing [Tasks] section, line 65
+Parsing [Tasks] section, line 66
+Parsing [Run] section, line 110
+Parsing [Run] section, line 120
+Parsing [Run] section, line 127
+Parsing [Run] section, line 135
+Parsing [Run] section, line 142
+Parsing [Run] section, line 149
+Parsing [Run] section, line 156
+Parsing [Run] section, line 163
+Parsing [Run] section, line 170
+Parsing [Run] section, line 188
+Parsing [Run] section, line 197
+Parsing [Run] section, line 205
+Parsing [Files] section, line 73
+Parsing [Files] section, line 75
+Parsing [Files] section, line 79
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\00___WindowsDefenderExceptions.bat
+Parsing [Files] section, line 80
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\08___ChangeWallpaperRogiers.ps1
+Parsing [Files] section, line 82
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarNeverCombine.ps1
+Parsing [Files] section, line 83
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___ShowAllFileExtensions.ps1
+Parsing [Files] section, line 84
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToThisPC.ps1
+Parsing [Files] section, line 85
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___HideTaskViewButton.ps1
+Parsing [Files] section, line 86
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\12___DisableWindowAnimation.ps1
+Parsing [Files] section, line 88
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
+Parsing [Files] section, line 91
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+Parsing [Files] section, line 92
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\07___MapNetworkDrives.ps1
+Parsing [Files] section, line 93
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\11___TotalCommanderInstall.ps1
+Parsing [Files] section, line 97
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\09___ChocolateyInstallPackage.ps1
+Parsing [Files] section, line 101
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
+Parsing [Files] section, line 102
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
+Parsing [Files] section, line 103
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+Parsing [Files] section, line 104
+   Reading version info: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
+Compiling [Code] section
+Deleting ROGIERS Wizard 21.1.exe from output directory
+Creating setup files
+   Updating icons (SETUP.EXE)
+   Compressing: C:\ROGIERS Wizard v21\DATA\AFREGELBESTAND.txt
+   Compressing: C:\ROGIERS Wizard v21\DATA\DAGRAPPORT.txt
+   Compressing: C:\ROGIERS Wizard v21\DATA\Rogiers-SUPPORT-AD__FR.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\Rogiers-SUPPORT-AD__NL.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_3GR_FREES.pgmx
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_DIKTETASTER.pgmx
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_KRUISLASER.pgmx
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_RTCP_5AS_MAESTRO.pgmx
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_RTCP_5AS_XILOG.pgm
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_UITLIJNING_3AS_MAESTRO.pgmx
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\Macro vertaling\LEESMIJ.txt
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Maestro CNC\Macro vertaling\Nederlands (taalinstelling Dutch)\MacroConfiguration.spcx
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\Install_log.txt
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\FILES\ROGIERS_Installer_v20___HANDLEIDING.pdf
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.psd
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.psd
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\00___WindowsDefenderExceptions.bat
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarCombine.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarNeverCombine.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___HideAllFileExtensions.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___ShowAllFileExtensions.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToQuickAccess.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToThisPC.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___HideTaskViewButton.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___ShowTaskViewButton.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\07___MapNetworkDrives.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\08___ChangeWallpaperRogiers.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\09___ChocolateyInstallPackage.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\11___TotalCommanderInstall.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\12___DisableWindowAnimation.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\MapNetworkdrives.bat
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\ROGIERS Installer\SCRIPTS\XCopy.bat
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\dotnet_versioncheck_2020.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\Microsoft DBGView.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\tcmd951x32.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\TextCrawler.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.chm
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp64.exe
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR.cab
+   Compressing: C:\ROGIERS Wizard v21\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL.cab
+   Compressing Setup program executable
+   Updating version info (SETUP.EXE)
+
+Warning: Line 231, Column 1: [Hint] Variable 'ERRORCODE' never used
+[PostCompile] Processing.
+[PostCompile] Processing is still being tested.
+[PostCompile] Processing finished.
+
+Compile finished.  [zondag, januari 31 2021 at 11:47:02]
+Total compile time: 00:52,578
