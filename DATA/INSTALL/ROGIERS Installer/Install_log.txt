@@ -1,4 +1,4 @@
-Starting compile.  [zondag, januari 31 2021 at 17:11:29]
+Starting compile.  [woensdag, februari 03 2021 at 21:19:56]
 Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -119,6 +119,7 @@ Parsing [Files] section, line 104
 Parsing [Files] section, line 105
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
+Deleting ROGIERS Wizard 21.1.exe from output directory
 Creating setup files
    Updating icons (SETUP.EXE)
    Compressing: C:\ROGIERS-Wizard\DATA\AFREGELBESTAND.txt
@@ -180,5 +181,5 @@ Warning: Line 232, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zondag, januari 31 2021 at 17:12:24]
-Total compile time: 00:55,218
+Compile finished.  [woensdag, februari 03 2021 at 21:20:55]
+Total compile time: 00:58,265
