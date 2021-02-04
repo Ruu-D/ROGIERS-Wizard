@@ -292,7 +292,7 @@ procedure BeforeInstall_NL1();
 begin
         if CheckListBox.Checked[NL1] then
         begin
-        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - QWERTY toetsenbord (SCM origineel)', mbInformation, MB_OK);
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
         Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);              
         end;
 end;
@@ -301,7 +301,7 @@ procedure BeforeInstall_NL2();
 begin
         if CheckListBox.Checked[NL2] then
         begin
-        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - AZERTY toetsenbord', mbInformation, MB_OK);
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - AZERTY toetsenbord' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
         Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);              
         end;
 end;
@@ -310,7 +310,7 @@ procedure BeforeInstall_FR1();
 begin
         if CheckListBox.Checked[FR1] then
         begin
-        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - QWERTY toetsenbord (SCM origineel)', mbInformation, MB_OK);
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
         Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);    
         end;
 end;
@@ -319,7 +319,7 @@ procedure BeforeInstall_FR2();
 begin
         if CheckListBox.Checked[FR2] then
         begin
-        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - AZERTY toetsenbord', mbInformation, MB_OK);
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - AZERTY toetsenbord' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
         Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);    
         end;
 end;
