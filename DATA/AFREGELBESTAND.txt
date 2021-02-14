@@ -11,10 +11,10 @@ Klant : XXX
 Binnenmagazijn:
 ***************
 -> Controle mechanisch X richting: Tool vooraan en achteraan laden en indien nodig met de regelbouten in lijn brengen. 
--> Vastzetten Bouten geleidingen magazijn met locitite. 
--> Y en Z Afregelen in Basemenu 'Editor shared' > 'Parametri' > 'Sistema' > 'Configura PLC' > 'TOOL CHANGE TR LEFT'.
+-> Vastzetten Bouten geleidingen magazijn met Loctite. 
+-> Y en Z afregelen in Basemenu 'Editor shared' > 'Parametri' > 'Sistema' > 'Configura PLC' > 'TOOL CHANGE TR LEFT'.
 		  	  |
-		(PASSLOGIN EN PASWOORD)
+	(PASSLOGIN + WACHTWOORD BASEMENU)
 
 1:	Y: -1381.10	ok	Z: -39.00 naar -41.00				
 2:	Y: -1271.10	ok	Z: -39.30 naar -41.00		
@@ -57,8 +57,8 @@ Freeslengte meting:
 
 Diktetaster:
 ************
--> Meetgereedschap aanmaken in de toollijst.
--> In MActive toevoegen onder 'Handmatige koppen'.
+-> Meetgereedschap aanmaken in de toollijst (E096).
+-> In MActive toevoegen onder 'Installatie' - 'Handmatige koppen'.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -161,7 +161,7 @@ Boordiepte:
 -> Elk boor controleren op diepte en indien nodig de lengte van de boor aanpassen.
 
 
-Zaag 66:
+Zaag 066:
 
 -> Aanpassen in Cfgx file. 'Configuration' > 'Machina' > 'Heads' > 'Foratrice F23L' > 'Mandrino 66' > 'X/Y/Z Offset'
 	-> OPGELET!! als de machine werkt op het netwerk kan het zijn dat de cfgx file ook op het netwerk staat.

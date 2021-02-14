@@ -72,36 +72,36 @@ Name: "dutch"; MessagesFile: "compiler:Languages\Dutch.isl"
 ; DATA folder uit Installer kopieren naar main folder "C:\ROGIERS" :
 Source: "DATA\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs onlyifdoesntexist; Permissions: everyone-full
 ; Scripts & files overschrijven indien al een bestaande installatie eerder werd uitgevoerd :
-Source: "DATA\INSTALL\ROGIERS Installer\*"; DestDir: "{app}\INSTALL\ROGIERS Installer\"; Flags: ignoreversion recursesubdirs createallsubdirs; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\*"; DestDir: "{app}\INSTALL\ROGIERS Wizard\"; Flags: ignoreversion recursesubdirs createallsubdirs; Permissions: everyone-full
 
 ; _______________________________________________________________________________________________________________________________
 ; Bestanden naar TEMP folder kopiëren :
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\00___WindowsDefenderExceptions.bat"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\08___ChangeWallpaperRogiers.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarNeverCombine.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___ShowAllFileExtensions.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToThisPC.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___HideTaskViewButton.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\12___DisableWindowAnimation.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-;;;;;;;Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+;;;;;;;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\10___EnableWindowsRestorePoint.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\07___MapNetworkDrives.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\11___TotalCommanderInstall.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
 ; _______________________________________________________________________________________________________________________________
 ; Chocolatey packages :
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\09___ChocolateyInstallPackage.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
 ; _______________________________________________________________________________________________________________________________
 ; Scripts voor wijziging van Windows taal en toetsenbord /// 'MyBeforeInstall' zorgt voor link naar [Code] waarin deze files na extract gebruikt worden :
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL1
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL2
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR1
-Source: "DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR2
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL1
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL2
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR1
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR2
 ; _______________________________________________________________________________________________________________________________
 
 [Run]
@@ -117,7 +117,7 @@ Filename: "powershell.exe"; \
 ; _______________________________________________________________________________________________________________________________
 
 ; Windows Defender uitzonderingen toevoegen :
-Filename: "{app}\INSTALL\ROGIERS Installer\SCRIPTS\00___WindowsDefenderExceptions.bat"; \
+Filename: "{app}\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat"; \
     Parameters: "/verysilent"; \
     Flags: nowait; \
     Components: Beperkt Volledig; \
@@ -213,7 +213,7 @@ Filename: "powershell.exe"; \
 ; Custom code (Pascal scripting)...
 
 [ThirdParty]
-CompileLogFile=.\DATA\INSTALL\ROGIERS Installer\Install_log.txt
+CompileLogFile=.\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
 
 ; _______________________________________________________________________________________________________________________________
 
@@ -293,7 +293,7 @@ begin
         if CheckListBox.Checked[NL1] then
         begin
         MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
-        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);              
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);              
         end;
 end;
 
@@ -302,7 +302,7 @@ begin
         if CheckListBox.Checked[NL2] then
         begin
         MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - AZERTY toetsenbord' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
-        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);              
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);              
         end;
 end;
 
@@ -311,7 +311,7 @@ begin
         if CheckListBox.Checked[FR1] then
         begin
         MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
-        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);    
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);    
         end;
 end;
 
@@ -320,7 +320,7 @@ begin
         if CheckListBox.Checked[FR2] then
         begin
         MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - AZERTY toetsenbord' + #13#10 + 'Even geduld...', mbInformation, MB_OK);
-        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode);    
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);    
         end;
 end;
 

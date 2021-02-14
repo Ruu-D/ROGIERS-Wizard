@@ -2,7 +2,7 @@
 
 $WshShell = New-Object -comObject WScript.Shell
 $Shortcut = $WshShell.CreateShortcut("$Home\Desktop\ROGIERS Installer v21.1 HANDLEIDING.lnk")
-$Shortcut.TargetPath = "C:\ROGIERS\INSTALL\ROGIERS Installer\FILES\ROGIERS_Installer_v21.1___HANDLEIDING.pdf"
+$Shortcut.TargetPath = "C:\ROGIERS\INSTALL\ROGIERS Wizard\FILES\ROGIERS_Installer_v21.1___HANDLEIDING.pdf"
 $Shortcut.Save()
 
 $bytes = [System.IO.File]::ReadAllBytes("$Home\Desktop\ROGIERS Installer v21.1 HANDLEIDING.lnk")

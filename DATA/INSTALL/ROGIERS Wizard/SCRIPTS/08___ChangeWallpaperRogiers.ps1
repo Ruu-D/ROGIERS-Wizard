@@ -11,8 +11,8 @@ $height = $CurrentRes.currentVerticalResolution
 $Resolution = "$width" + "x" + "$height"
 
 #Defining a parameter for the image paths
-$WallpaperFormatWidescreen = "C:\ROGIERS\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg"
-$WallpaperFormatSquare = "C:\ROGIERS\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg"
+$WallpaperFormatWidescreen = "C:\ROGIERS\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg"
+$WallpaperFormatSquare = "C:\ROGIERS\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg"
 
 #This is the standard wallpaper for the EYE-M screen format [1920x1080] - if other formats are not found, this one will be used.
 $WallpaperPath = $WallpaperFormatWidescreen

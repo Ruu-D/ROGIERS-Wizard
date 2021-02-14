@@ -1,4 +1,4 @@
-Starting compile.  [donderdag, februari 04 2021 at 10:22:24]
+Starting compile.  [zaterdag, februari 13 2021 at 14:04:00]
 Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -87,37 +87,37 @@ Parsing [Run] section, line 206
 Parsing [Files] section, line 74
 Parsing [Files] section, line 76
 Parsing [Files] section, line 80
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\00___WindowsDefenderExceptions.bat
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
 Parsing [Files] section, line 81
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\08___ChangeWallpaperRogiers.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers.ps1
 Parsing [Files] section, line 83
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarNeverCombine.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
 Parsing [Files] section, line 84
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___ShowAllFileExtensions.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1
 Parsing [Files] section, line 85
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToThisPC.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1
 Parsing [Files] section, line 86
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___HideTaskViewButton.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1
 Parsing [Files] section, line 87
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\12___DisableWindowAnimation.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
 Parsing [Files] section, line 89
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
 Parsing [Files] section, line 92
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
 Parsing [Files] section, line 93
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\07___MapNetworkDrives.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
 Parsing [Files] section, line 94
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\11___TotalCommanderInstall.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
 Parsing [Files] section, line 98
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\09___ChocolateyInstallPackage.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
 Parsing [Files] section, line 102
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
 Parsing [Files] section, line 103
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
 Parsing [Files] section, line 104
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
 Parsing [Files] section, line 105
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
 Deleting ROGIERS Wizard 21.1.exe from output directory
 Creating setup files
@@ -158,35 +158,35 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_UITLIJNING_3AS_MAESTRO.pgmx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\LEESMIJ.txt
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\Nederlands (taalinstelling Dutch)\MacroConfiguration.spcx
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\Install_log.txt
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\FILES\ROGIERS_Installer_v20___HANDLEIDING.pdf
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.psd
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.psd
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\00___WindowsDefenderExceptions.bat
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarCombine.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\01___TaskbarNeverCombine.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___HideAllFileExtensions.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\02___ShowAllFileExtensions.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToQuickAccess.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\03___LaunchExplorerToThisPC.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___HideTaskViewButton.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\04___ShowTaskViewButton.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\07___MapNetworkDrives.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\08___ChangeWallpaperRogiers.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\09___ChocolateyInstallPackage.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\10___EnableWindowsRestorePoint.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\11___TotalCommanderInstall.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\12___DisableWindowAnimation.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\MapNetworkdrives.bat
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Installer\SCRIPTS\XCopy.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\ROGIERS_Installer_v20___HANDLEIDING.pdf
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.psd
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.psd
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarCombine.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___HideAllFileExtensions.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToQuickAccess.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___ShowTaskViewButton.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\MapNetworkdrives.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\XCopy.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\dotnet_versioncheck_2020.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Microsoft DBGView.exe
@@ -205,5 +205,5 @@ Warning: Line 232, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [donderdag, februari 04 2021 at 10:23:17]
-Total compile time: 00:52,984
+Compile finished.  [zaterdag, februari 13 2021 at 14:04:40]
+Total compile time: 00:40,000
