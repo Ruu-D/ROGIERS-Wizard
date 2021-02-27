@@ -87,6 +87,7 @@ Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1"; D
 
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 ;;;;;;;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
@@ -181,6 +182,13 @@ Filename: "powershell.exe"; \
 ;;;;    Components: Beperkt Volledig; \
 ;;;    Tasks: ScriptsUitvoeren
 
+Filename: "powershell.exe"; \
+    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\14___SetDefaultFileExtensions.ps1"""; \
+    WorkingDir: "{app}"; \
+    Flags: runhidden; \
+    Components: Beperkt Volledig; \
+    Tasks: ScriptsUitvoeren
+
 ; _______________________________________________________________________________________________________________________________
 
 ; Script voor uitvoeren van "Chocolatey" package manager :
@@ -267,7 +275,7 @@ begin
   AddCustomQueryPage();  
 
 { Pagina  na 'selectie van opdrachten' voor taalwijziging }
-CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling', 'Selecteer één van onderstaande opties.' + #13#10 + 'ENKEL mogelijk op Windows 10 "EYE-M" toestellen.');
+CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling', 'Selecteer één van onderstaande opties.' + #13#10 + 'ENKEL mogelijk op Windows 10 "EYE-M" toestellen. Of gebruik "LPKSETUP" met de taalpakketten.');
 
   CheckListBox := TNewCheckListBox.Create(CustomLanguagePage);
   CheckListBox.Width := CustomLanguagePage.SurfaceWidth;

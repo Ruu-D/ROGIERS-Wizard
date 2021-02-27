@@ -1,4 +1,4 @@
-Starting compile.  [zaterdag, februari 13 2021 at 14:04:00]
+Starting compile.  [zaterdag, februari 27 2021 at 14:55:33]
 Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -72,18 +72,19 @@ Parsing [Tasks] section, line 64
 Parsing [Tasks] section, line 65
 Parsing [Tasks] section, line 66
 Parsing [Tasks] section, line 67
-Parsing [Run] section, line 111
-Parsing [Run] section, line 121
-Parsing [Run] section, line 128
-Parsing [Run] section, line 136
-Parsing [Run] section, line 143
-Parsing [Run] section, line 150
-Parsing [Run] section, line 157
-Parsing [Run] section, line 164
-Parsing [Run] section, line 171
-Parsing [Run] section, line 189
-Parsing [Run] section, line 198
+Parsing [Run] section, line 112
+Parsing [Run] section, line 122
+Parsing [Run] section, line 129
+Parsing [Run] section, line 137
+Parsing [Run] section, line 144
+Parsing [Run] section, line 151
+Parsing [Run] section, line 158
+Parsing [Run] section, line 165
+Parsing [Run] section, line 172
+Parsing [Run] section, line 186
+Parsing [Run] section, line 197
 Parsing [Run] section, line 206
+Parsing [Run] section, line 214
 Parsing [Files] section, line 74
 Parsing [Files] section, line 76
 Parsing [Files] section, line 80
@@ -102,21 +103,23 @@ Parsing [Files] section, line 87
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
 Parsing [Files] section, line 89
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
-Parsing [Files] section, line 92
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+Parsing [Files] section, line 91
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
 Parsing [Files] section, line 93
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
 Parsing [Files] section, line 94
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+Parsing [Files] section, line 95
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
-Parsing [Files] section, line 98
+Parsing [Files] section, line 99
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
-Parsing [Files] section, line 102
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
 Parsing [Files] section, line 103
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
 Parsing [Files] section, line 104
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
 Parsing [Files] section, line 105
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+Parsing [Files] section, line 106
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
 Deleting ROGIERS Wizard 21.1.exe from output directory
@@ -126,30 +129,31 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\DAGRAPPORT.txt
    Compressing: C:\ROGIERS-Wizard\DATA\Rogiers-SUPPORT-AD__FR.exe
    Compressing: C:\ROGIERS-Wizard\DATA\Rogiers-SUPPORT-AD__NL.exe
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_TearOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_TearOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_TearOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_PeelOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_PeelOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_PeelOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_TearOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_TearOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_TearOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_PeelOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_PeelOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_PeelOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_TearOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_TearOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_TearOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_PeelOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_PeelOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_PeelOff_80x50.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_TearOff_80x100.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_TearOff_80x140.drs
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\LabelPrinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_TearOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZEBRA_labelprinter_instellen_instellingen_importeren.pdf
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_TearOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_TearOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_TearOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_PeelOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_PeelOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_PeelOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_TearOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_TearOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalTransfer_TearOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_PeelOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_PeelOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_PeelOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_TearOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_TearOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalDirect_TearOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_PeelOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_PeelOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_PeelOff_80x50.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_TearOff_80x100.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_TearOff_80x140.drs
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_ZD220-203dpi-ZPL\ZDesigner_ZD220-203dpi-ZPL_ThermalTransfer_TearOff_80x50.drs
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_3GR_FREES.pgmx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_DIKTETASTER.pgmx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_KRUISLASER.pgmx
@@ -159,11 +163,9 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\LEESMIJ.txt
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\Nederlands (taalinstelling Dutch)\MacroConfiguration.spcx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\ROGIERS_Installer_v20___HANDLEIDING.pdf
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\ROGIERS_Wizard_v21___MANUAL.pdf
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.psd
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.psd
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarCombine.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
@@ -185,6 +187,7 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\MapNetworkdrives.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\XCopy.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
@@ -200,10 +203,10 @@ Creating setup files
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
-Warning: Line 232, Column 1: [Hint] Variable 'ERRORCODE' never used
+Warning: Line 240, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing.
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zaterdag, februari 13 2021 at 14:04:40]
-Total compile time: 00:40,000
+Compile finished.  [zaterdag, februari 27 2021 at 14:56:03]
+Total compile time: 00:30,812
