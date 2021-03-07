@@ -7,7 +7,7 @@ echo ...
 
 net session >nul 2>&1
 if %errorLevel% == 0 (
-    color 90
+    color 9e
     echo Gelukt: Administrator rechten bevestigd.
 
     @echo on

@@ -1,4 +1,4 @@
-Starting compile.  [zaterdag, februari 27 2021 at 14:55:33]
+Starting compile.  [zondag, maart 07 2021 at 10:30:44]
 Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -72,19 +72,19 @@ Parsing [Tasks] section, line 64
 Parsing [Tasks] section, line 65
 Parsing [Tasks] section, line 66
 Parsing [Tasks] section, line 67
-Parsing [Run] section, line 112
-Parsing [Run] section, line 122
-Parsing [Run] section, line 129
-Parsing [Run] section, line 137
-Parsing [Run] section, line 144
-Parsing [Run] section, line 151
-Parsing [Run] section, line 158
-Parsing [Run] section, line 165
-Parsing [Run] section, line 172
-Parsing [Run] section, line 186
-Parsing [Run] section, line 197
-Parsing [Run] section, line 206
-Parsing [Run] section, line 214
+Parsing [Run] section, line 115
+Parsing [Run] section, line 125
+Parsing [Run] section, line 132
+Parsing [Run] section, line 140
+Parsing [Run] section, line 147
+Parsing [Run] section, line 154
+Parsing [Run] section, line 161
+Parsing [Run] section, line 168
+Parsing [Run] section, line 175
+Parsing [Run] section, line 189
+Parsing [Run] section, line 200
+Parsing [Run] section, line 209
+Parsing [Run] section, line 217
 Parsing [Files] section, line 74
 Parsing [Files] section, line 76
 Parsing [Files] section, line 80
@@ -114,12 +114,12 @@ Parsing [Files] section, line 95
 Parsing [Files] section, line 99
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
 Parsing [Files] section, line 103
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
-Parsing [Files] section, line 104
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
-Parsing [Files] section, line 105
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
 Parsing [Files] section, line 106
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
+Parsing [Files] section, line 108
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+Parsing [Files] section, line 109
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
 Deleting ROGIERS Wizard 21.1.exe from output directory
@@ -183,8 +183,12 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1_RUN_STARTUP.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2_RUN_STARTUP.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
@@ -203,10 +207,10 @@ Creating setup files
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
-Warning: Line 240, Column 1: [Hint] Variable 'ERRORCODE' never used
+Warning: Line 242, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing.
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zaterdag, februari 27 2021 at 14:56:03]
-Total compile time: 00:30,812
+Compile finished.  [zondag, maart 07 2021 at 10:31:32]
+Total compile time: 00:48,063

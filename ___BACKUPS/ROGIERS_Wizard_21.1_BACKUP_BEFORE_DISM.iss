@@ -99,11 +99,8 @@ Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1";
 
 ; _______________________________________________________________________________________________________________________________
 ; Scripts voor wijziging van Windows taal en toetsenbord /// 'MyBeforeInstall' zorgt voor link naar [Code] waarin deze files na extract gebruikt worden :
-Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL1
-; //// Bij 'BeforeInstall' mag hier maar één file geschreven worden, anders wordt bij uitvoeren van de procedure meermaals de MSGBOX + EXEC uitgevoerd ........
-
-Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL2
-
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL1
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL2
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR1
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR2
 ; _______________________________________________________________________________________________________________________________
@@ -231,16 +228,15 @@ CompileLogFile=.\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
 [Code]
 
 var
-CustomQueryPage: TInputQueryWizardPage;
-CustomLanguagePage: TWizardPage;
-CheckListBox: TNewCheckListBox;
+  CustomQueryPage: TInputQueryWizardPage;
+  CustomLanguagePage: TWizardPage;
+  CheckListBox: TNewCheckListBox;
     NW: Integer;
     NL, FR: Integer;
     NL1, NL2: Integer;
     FR1, FR2: Integer;
-ErrorCode: Integer;
-OldState: Boolean;
 ResultCode: Integer;
+ErrorCode: Integer;
 
 {_______________________________________________________________________________________________________________________________}
 
@@ -268,7 +264,7 @@ begin
 
 { Add items (False means it's not a password edit) }
   CustomQueryPage.Add('Initialen: ', False);
-end;
+  end;
 
 {_______________________________________________________________________________________________________________________________}
 
@@ -279,7 +275,7 @@ begin
   AddCustomQueryPage();  
 
 { Pagina  na 'selectie van opdrachten' voor taalwijziging }
-CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. [Win10 Enterprise 2016 LTSB - versie 1607 - build 14393.0]' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
+CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling', 'Selecteer één van onderstaande opties.' + #13#10 + 'ENKEL mogelijk op "EYE-M" toestellen. [Win10 Enterprise 2016 LTSB - versie 1607 - build 14393.0]');
 
   CheckListBox := TNewCheckListBox.Create(CustomLanguagePage);
   CheckListBox.Width := CustomLanguagePage.SurfaceWidth;
@@ -299,71 +295,54 @@ end;
 
 {_______________________________________________________________________________________________________________________________}
 
-{Execute Powershell script to modify Windows display language + keyboard layout, depending on which checkbox is selected on page "CustomLanguagePage"}     
 procedure BeforeInstall_NL1();   
+{Execute Powershell script to modify Windows display language + keyboard layout, depending on which checkbox is selected on page "CustomLanguagePage"}      
 begin
         if CheckListBox.Checked[NL1] then
         begin
-           // First verify that the user is running a supported 64-bit version of Windows, because calling EnableFsRedirection(False) will raise an exception otherwise.
-           if IsWin64 then
-                begin
-                      // Turn off redirection, so that 'powershell' from the 64-bit System directory is launched.
-                      OldState := EnableFsRedirection(False);
-                      try
-                                MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
-                                Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1"""', '', SW_SHOW,ewWaitUntilTerminated, ResultCode);  
-                      finally
-                                // Restore the previous redirection state.
-                                EnableFsRedirection(OldState);
-                end;
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);              
         end;
-end;
 end;
 
 procedure BeforeInstall_NL2();   
 begin
         if CheckListBox.Checked[NL2] then
         begin
-
-           if IsWin64 then
-                begin
-                      OldState := EnableFsRedirection(False);
-                      try
-                                MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - AZERTY toetsenbord' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
-                                Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);  
-                      finally
-                                EnableFsRedirection(OldState);
-                end;
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'NEDERLANDS - AZERTY toetsenbord' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_ChangeLanguage_NL2.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);              
         end;
-end;
 end;
 
 procedure BeforeInstall_FR1();   
 begin
         if CheckListBox.Checked[FR1] then
-              begin
-                    MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
-                    Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);    
-              end;  
+        begin
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - QWERTY toetsenbord (SCM origineel)' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);    
+        end;
 end;
 
 procedure BeforeInstall_FR2();   
 begin
         if CheckListBox.Checked[FR2] then
-              begin
-                    MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - AZERTY toetsenbord' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
-                    Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);    
-              end;
+        begin
+        MsgBox('Taal instellingen worden nu gewijzigd naar:' + #13#10 + 'FRANS - AZERTY toetsenbord' + #13#10 + 'Even geduld... Drink een koffie.', mbInformation, MB_OK);
+        Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode);    
+        end;
 end;
+
 
 {_______________________________________________________________________________________________________________________________}
 
-{ Procedure om input (naam) van gebruiker opnieuw te gebruiken voor aanmaak van map - Map maken met : datum van vandaag + spatie + initialen van technieker (gebruiker ingave) }
+{ Procedure om input (naam) van gebruiker opnieuw te gebruiken voor aanmaak van map }
 procedure CurStepChanged(CurStep: TSetupStep);
 
 begin
    if CurStep = ssPostInstall then   
-     begin
+      begin
+     { Map maken met : datum van vandaag + spatie + initialen van technieker (gebruiker ingave) }
      CreateDir('C:\ROGIERS\' + DateTime + ' ' + UserInput);
-     end;
+      end;
+
   end;
