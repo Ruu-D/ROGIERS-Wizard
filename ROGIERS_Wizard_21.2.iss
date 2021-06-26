@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "ROGIERS Wizard"
-#define MyAppVersion "21.2"
+#define MyAppVersion "21.3"
 #define MyAppPublisher "Rogiers Vanpoucke NV/SA"
 #define MyAppURL "https://www.rogiers.be/"
 
@@ -21,7 +21,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName=C:\ROGIERS
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
-OutputBaseFilename=ROGIERS Wizard 21.2
+OutputBaseFilename=ROGIERS Wizard 21.3
 SetupIconFile=.\GRAPHICS\ROGIERS_LOGO.ico
 AppCopyright=Daan Verhoost
 DisableDirPage=yes
@@ -40,7 +40,7 @@ InternalCompressLevel=ultra64
 SolidCompression=True
 Compression=lzma2/ultra64
 WizardStyle=modern
-VersionInfoVersion=21.2
+VersionInfoVersion=21.3
 MinVersion=0,6.1
 ShowTasksTreeLines=True
 UsePreviousSetupType=False
@@ -62,7 +62,7 @@ Name: "ChangeWallpaper"; Description: "ROGIERS Wallpaper instellen"; GroupDescri
 Name: "InstallatieTotalCommander"; Description: "Installatie Total Commander [silent]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "ScriptsUitvoeren"; Description: "Powershell scripts uitvoeren [visuele effecten, snelkoppelingen maken, handleidingen kopiëren, ...]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "EnableWindowsRestorePoint"; Description: "Script uitvoeren om Windows herstelpunten te activeren"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
-Name: "ChocolateyApps"; Description: "Chocolatey : Apps installeren [Notepad++, Google Chrome, 7-Zip, CutePDF]"; GroupDescription: "Extra software :"; Components: Chocolatey
+Name: "ChocolateyApps"; Description: "Chocolatey : Apps installeren [Notepad++, Google Chrome, 7-Zip, CutePDF, IrfanView]"; GroupDescription: "Extra software :"; Components: Chocolatey
 Name: "MapNetwerkDrives"; Description: "Bestand in Windows startup kopiëren om netwerkschijven te 'mappen'"; GroupDescription: "Voor softwaremensen :"; Flags: unchecked; Components: Volledig Beperkt
 
 [Languages]

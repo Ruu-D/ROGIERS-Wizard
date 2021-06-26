@@ -1,0 +1,2 @@
+file = ASKPATH("$(Appdir)data\*.csv" ; "Selecteer het 'CSV-bestand' om te importeren")
+OPEN (file ; "stk")
