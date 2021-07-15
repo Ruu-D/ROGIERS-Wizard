@@ -1,4 +1,4 @@
-Starting compile.  [zaterdag, juni 26 2021 at 13:12:41]
+Starting compile.  [donderdag, juli 15 2021 at 16:11:31]
 Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -72,19 +72,19 @@ Parsing [Tasks] section, line 64
 Parsing [Tasks] section, line 65
 Parsing [Tasks] section, line 66
 Parsing [Tasks] section, line 67
-Parsing [Run] section, line 115
-Parsing [Run] section, line 125
-Parsing [Run] section, line 132
-Parsing [Run] section, line 140
-Parsing [Run] section, line 147
-Parsing [Run] section, line 154
-Parsing [Run] section, line 161
-Parsing [Run] section, line 168
-Parsing [Run] section, line 175
-Parsing [Run] section, line 189
-Parsing [Run] section, line 200
-Parsing [Run] section, line 209
-Parsing [Run] section, line 217
+Parsing [Run] section, line 114
+Parsing [Run] section, line 124
+Parsing [Run] section, line 131
+Parsing [Run] section, line 139
+Parsing [Run] section, line 146
+Parsing [Run] section, line 153
+Parsing [Run] section, line 160
+Parsing [Run] section, line 167
+Parsing [Run] section, line 174
+Parsing [Run] section, line 188
+Parsing [Run] section, line 199
+Parsing [Run] section, line 208
+Parsing [Run] section, line 216
 Parsing [Files] section, line 74
 Parsing [Files] section, line 76
 Parsing [Files] section, line 80
@@ -115,11 +115,11 @@ Parsing [Files] section, line 99
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
 Parsing [Files] section, line 103
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
-Parsing [Files] section, line 106
+Parsing [Files] section, line 105
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
-Parsing [Files] section, line 108
+Parsing [Files] section, line 107
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
-Parsing [Files] section, line 109
+Parsing [Files] section, line 108
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
 Deleting ROGIERS Wizard 21.3.exe from output directory
@@ -129,8 +129,13 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\DAGRAPPORT.txt
    Compressing: C:\ROGIERS-Wizard\DATA\Rogiers-SUPPORT-AD__FR.exe
    Compressing: C:\ROGIERS-Wizard\DATA\Rogiers-SUPPORT-AD__NL.exe
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\csv_parts_import.MCO
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\ROGIERS-GABBIANI.MCH
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\ROGIERS\CSV-IMPORT\csv_parts_import.MCO
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\ROGIERS\RAPPORTEN\ROGIERS_80x100_QR.RPT
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\Automatic Warehouse-BARBARIC.png
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\CSV-import.png
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\MActive_LARGE.png
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\Productie.png
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZEBRA_labelprinter_instellen_instellingen_importeren.pdf
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x100.drs
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Labelprinters\ZDesigner_GC420t\ZDesigner_GC420t_ThermalDirect_PeelOff_80x140.drs
@@ -162,6 +167,7 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_RTCP_5AS_MAESTRO.pgmx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_RTCP_5AS_XILOG.pgm
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\TEST_UITLIJNING_3AS_MAESTRO.pgmx
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\AFREGELEN\VELDEN_INMETEN_MAESTRO.pgmx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\LEESMIJ.txt
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\Nederlands (taalinstelling Dutch)\MacroConfiguration.spcx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
@@ -199,7 +205,7 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\dotnet_versioncheck_2020.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Microsoft DBGView.exe
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\tcmd951x32.exe
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\tcmd1000x64.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\TextCrawler.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.chm
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.exe
@@ -209,10 +215,10 @@ Creating setup files
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
-Warning: Line 242, Column 1: [Hint] Variable 'ERRORCODE' never used
+Warning: Line 241, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing.
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zaterdag, juni 26 2021 at 13:13:10]
-Total compile time: 00:28,859
+Compile finished.  [donderdag, juli 15 2021 at 16:12:04]
+Total compile time: 00:32,672
