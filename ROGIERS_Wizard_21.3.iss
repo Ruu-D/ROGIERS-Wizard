@@ -263,7 +263,7 @@ begin
   CustomQueryPage := CreateInputQueryPage(wpWelcome,
     'Naam technieker',
     'Vul hieronder de initialen van uw naam in (bv. DVH).',
-    'Dit wordt gebruikt om een map te creëren in "C:\ROGIERS" op datum van vandaag. Vervolgens zal automatisch een map aangemaakt worden zoals : "2021.05.04 DVH". Plaats nadien hierin uw DAGRAPPORT en AFREGELBESTAND.');
+    'Dit wordt gebruikt om een map te creëren in "C:\ROGIERS\BACKUPS" op datum van vandaag. Vervolgens zal automatisch een map aangemaakt worden zoals : "2021.05.04 DVH". Plaats nadien hierin uw DAGRAPPORT en AFREGELBESTAND.');
 
 { Add items (False means it's not a password edit) }
   CustomQueryPage.Add('Initialen: ', False);
@@ -363,6 +363,6 @@ procedure CurStepChanged(CurStep: TSetupStep);
 begin
    if CurStep = ssPostInstall then   
      begin
-     CreateDir('C:\ROGIERS\' + DateTime + ' ' + UserInput);
+     CreateDir('C:\ROGIERS\BACKUPS\' + DateTime + ' ' + UserInput);
      end;
   end;
