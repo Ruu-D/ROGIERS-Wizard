@@ -19,7 +19,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\UI00.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\UI00.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\UI00.exe"" %1"
 	}
 	# ------------------------------------------------------------------
 	# File extensions for Maestro ToolManager [ToolManager.exe] :
@@ -29,7 +30,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ToolManager.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ToolManager.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ToolManager.exe"" %1"
 	}
 	# ------------------------------------------------------------------
 	# File extensions for Maestro ToolEquipmentManager [ToolEquipmentManager.exe] :
@@ -39,7 +41,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ToolEquipmentManager.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ToolEquipmentManager.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ToolEquipmentManager.exe"" %1"
 	}
 	# ------------------------------------------------------------------
 	# File extensions for Maestro ConfigurationManager [ConfigurationManager.exe] :
@@ -49,7 +52,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ConfigurationManager.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ConfigurationManager.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ConfigurationManager.exe"" %1"
 	}
 
 } else {
@@ -68,7 +72,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\UI00.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\UI00.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\UI00.exe"" %1"
 	}
 	# ------------------------------------------------------------------
 	# File extensions for Maestro ToolManager [ToolManager.exe] :
@@ -78,7 +83,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ToolManager.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ToolManager.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ToolManager.exe"" %1"
 	}
 	# ------------------------------------------------------------------
 	# File extensions for Maestro ToolEquipmentManager [ToolEquipmentManager.exe] :
@@ -88,7 +94,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ToolEquipmentManager.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ToolEquipmentManager.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ToolEquipmentManager.exe"" %1"
 	}
 	# ------------------------------------------------------------------
 	# File extensions for Maestro ConfigurationManager [ConfigurationManager.exe] :
@@ -98,7 +105,8 @@ if (Test-Path -Path $Folder) {
 		$extfile=$ext+"file"
 		$dotext="." + $ext
 		cmd /c assoc $dotext=$extfile
-		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ConfigurationManager.exe"" ""%1"""
+		#cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ConfigurationManager.exe"" ""%1"""
+		cmd /c "ftype $extfile=""C:\Program Files\SCM Group\Maestro\ConfigurationManager.exe"" %1"
 	}
 
 }
