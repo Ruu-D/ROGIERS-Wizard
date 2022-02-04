@@ -1,4 +1,4 @@
-Starting compile.  [woensdag, november 03 2021 at 08:51:07]
+Starting compile.  [vrijdag, februari 04 2022 at 17:32:31]
 Compiling script with Inno Setup 6.0.5 (u) [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -72,19 +72,20 @@ Parsing [Tasks] section, line 64
 Parsing [Tasks] section, line 65
 Parsing [Tasks] section, line 66
 Parsing [Tasks] section, line 67
-Parsing [Run] section, line 114
-Parsing [Run] section, line 124
-Parsing [Run] section, line 131
-Parsing [Run] section, line 139
-Parsing [Run] section, line 146
-Parsing [Run] section, line 153
-Parsing [Run] section, line 160
-Parsing [Run] section, line 167
-Parsing [Run] section, line 174
-Parsing [Run] section, line 188
-Parsing [Run] section, line 199
-Parsing [Run] section, line 208
+Parsing [Run] section, line 115
+Parsing [Run] section, line 125
+Parsing [Run] section, line 132
+Parsing [Run] section, line 140
+Parsing [Run] section, line 147
+Parsing [Run] section, line 154
+Parsing [Run] section, line 161
+Parsing [Run] section, line 168
+Parsing [Run] section, line 175
+Parsing [Run] section, line 189
+Parsing [Run] section, line 196
+Parsing [Run] section, line 207
 Parsing [Run] section, line 216
+Parsing [Run] section, line 224
 Parsing [Files] section, line 74
 Parsing [Files] section, line 76
 Parsing [Files] section, line 80
@@ -105,32 +106,37 @@ Parsing [Files] section, line 89
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
 Parsing [Files] section, line 91
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
-Parsing [Files] section, line 93
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+Parsing [Files] section, line 92
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
 Parsing [Files] section, line 94
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
 Parsing [Files] section, line 95
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+Parsing [Files] section, line 96
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
-Parsing [Files] section, line 99
+Parsing [Files] section, line 100
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
-Parsing [Files] section, line 103
+Parsing [Files] section, line 104
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
-Parsing [Files] section, line 105
+Parsing [Files] section, line 106
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
-Parsing [Files] section, line 107
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
 Parsing [Files] section, line 108
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+Parsing [Files] section, line 109
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
+Deleting ROGIERS Wizard 22.1.exe from output directory
 Creating setup files
    Updating icons (SETUP.EXE)
    Compressing: C:\ROGIERS-Wizard\DATA\DAGRAPPORT.txt
+   Compressing: C:\ROGIERS-Wizard\DATA\Rogiers PORTAL.url
    Compressing: C:\ROGIERS-Wizard\DATA\Rogiers-SUPPORT-AD__FR.exe
    Compressing: C:\ROGIERS-Wizard\DATA\Rogiers-SUPPORT-AD__NL.exe
    Compressing: C:\ROGIERS-Wizard\DATA\AFREGELEN\AFREGELBESTAND.txt
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\ROGIERS-GABBIANI.MCH
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\ROGIERS\CSV-IMPORT\csv_parts_import.MCO
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\ROGIERS\RAPPORTEN\ROGIERS_80x100_QR.RPT
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\RES_Tools.STS
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\Automatic Warehouse-BARBARIC.png
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\CSV-import.png
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ARDIS\Settings\IMG_TOOLS\MActive_LARGE.png
@@ -170,6 +176,7 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\LEESMIJ.txt
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Maestro CNC\Macro vertaling\Nederlands (taalinstelling Dutch)\MacroConfiguration.spcx
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\ROGIERS_LOGO.ico
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\ROGIERS_Wizard_v21___MANUAL.pdf
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-EYE-M-2021.jpg
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\FILES\Rogiers Wallpapers\ROGIERS-WALLPAPER-SQUARE-2021.jpg
@@ -199,12 +206,13 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\MapNetworkdrives.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\XCopy.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\dotnet_versioncheck_2020.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Microsoft DBGView.exe
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\tcmd1000x64.exe
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\tcmd1000x32_64.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\TextCrawler.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.chm
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.exe
@@ -214,10 +222,10 @@ Creating setup files
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
-Warning: Line 241, Column 1: [Hint] Variable 'ERRORCODE' never used
+Warning: Line 249, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing.
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [woensdag, november 03 2021 at 08:51:41]
-Total compile time: 00:34,453
+Compile finished.  [vrijdag, februari 04 2022 at 17:33:07]
+Total compile time: 00:35,516

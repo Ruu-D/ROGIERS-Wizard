@@ -1,0 +1,89 @@
+[RES_Tools-1]
+Picture=C:\Ardis\Settings\IMG_TOOLS\folder.PNG
+Text=Open
+Cmd=OPEN("?")
+[RES_Tools-1]
+
+[RES_Tools-2]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\CSV-import.png
+Text=CSV import from external software
+Cmd=MACRO("C:\ARDIS\ROGIERS\CSV-IMPORT\csv_parts_import.MCO")
+[RES_Tools-2]
+
+[RES_Tools-3]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\Save.png
+Text=Save
+Cmd=SAVE
+[RES_Tools-3]
+
+[RES_Tools-4]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\Figures.png
+Text=Link to LAYFIG
+Cmd=RUNLINK("LAYFIG")
+[RES_Tools-4]
+
+[RES_Tools-5]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\Optimize.png
+Text=Run Optimizer
+Cmd=Activate("#";32771)
+[RES_Tools-5]
+
+[RES_Tools-6]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\Automatic Warehouse.png
+Text=Send to BARBARIC warehouse system
+Cmd=RUN("C:\ARDIS\ROGIERS\BARBARIC-CSF.url")
+[RES_Tools-6]
+
+[RES_Tools-7]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\Productie.png
+Text=Send cutting schemes to SCM Beamsaw
+Cmd=RUNLINK("SCM_MAESTRO")
+[RES_Tools-7]
+
+[RES_Tools-8]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\ARDIS-Analytics-blue.png
+Text=ARDIS ANALYTICS
+Cmd=OPEN("ARDISCLOUD")
+[RES_Tools-8]
+
+[RES_Tools-9]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\printer.png
+Text=Print lay-outs (F4) on default printer
+Cmd=REPORT("C:\ARDIS\Ned\Layouts.RPT";"";"1";"CutePDF Writer")
+[RES_Tools-9]
+
+[RES_Tools-10]
+Picture=C:\ARDIS\Settings\IMG_TOOLS\Create Offcuts.png
+Text=Convert REST to SHEET
+Cmd=RestToSheet
+[RES_Tools-10]
+
+[RES_Tools$FORM-1]
+[RES_Tools$FORM-1]
+
+[RES_Tools$FORM-2]
+[RES_Tools$FORM-2]
+
+[RES_Tools$FORM-3]
+[RES_Tools$FORM-3]
+
+[RES_Tools$FORM-4]
+[RES_Tools$FORM-4]
+
+[RES_Tools$FORM-5]
+[RES_Tools$FORM-5]
+
+[RES_Tools$FORM-6]
+[RES_Tools$FORM-6]
+
+[RES_Tools$FORM-7]
+[RES_Tools$FORM-7]
+
+[RES_Tools$FORM-8]
+[RES_Tools$FORM-8]
+
+[RES_Tools$FORM-9]
+[RES_Tools$FORM-9]
+
+[RES_Tools$FORM-10]
+[RES_Tools$FORM-10]
