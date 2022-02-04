@@ -18,14 +18,14 @@ if %errorLevel% == 0 (
     echo Windows Defender uitzonderingen toegevoegd. OK.
 	echo ...
 	echo Klaar!
-	timeout /t 3 /nobreak >nul
+	timeout /t 2 /nobreak >nul
 
 
 ) else (
     color ce
     echo Mislukt: De huidige gebruiker heeft GEEN administrator rechten... Voer de installatie opnieuw uit.
 	
-	timeout /t 3 /nobreak >nul
+	timeout /t 2 /nobreak >nul
 	pause
 	echo Druk op een toets om verder te gaan...
 	

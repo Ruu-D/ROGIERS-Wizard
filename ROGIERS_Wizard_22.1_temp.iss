@@ -238,10 +238,8 @@ CompileLogFile=.\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
 [Code]
 
 var
-CustomQueryPage: TInputQueryWizardPage;                           // Om de naam van de technieker te kunnen invullen
-CustomQueryPageHostname: TInputQueryWizardPage;        // Om de computer naam te veranderen
-Name: string;                                                                                   // Computernaam opvragen
-CustomLanguagePage: TWizardPage;                                        // Om de taal te wijzigen van de PC
+CustomQueryPage: TInputQueryWizardPage;
+CustomLanguagePage: TWizardPage;
 CheckListBox: TNewCheckListBox;
     NW: Integer;
     NL, FR: Integer;
@@ -259,76 +257,15 @@ ResultCode: Integer;
             Result := GetDateTimeString('yyyy/mm/dd', '.', ':');
         end;        
 
-{ Ingave van gebruiker omzetten in 'String' om bij aanmaak van map opnieuw te gebruiken - Windows computernaam}
-      function UserInputName: String;
+{ Ingave van gebruiker omzetten in 'String' om bij aanmaak van map opnieuw te gebruiken }
+      function UserInput: String;
         begin
             Result := CustomQueryPage.Values[0];
         end;        
 
-      function UserInputComputerName: String;
-        begin
-            Result := CustomQueryPageHostname.Values[0];
-        end;        
-
-{_______________________________________________________________________________________________________________________________}
-     
-
-
-
-
-
-
-
-{ Procedure voor achterhalen van de computernaam }
-     
-//#ifdef UNICODE
-//  #define AW "W"
-//#else
-//  #define AW "A"
-//#endif
-//
-//const
-//  ERROR_MORE_DATA = 234;
-//
-//type
-//  TComputerNameFormat = (
-//    ComputerNameNetBIOS,
-//    ComputerNameDnsHostname,
-//    ComputerNameDnsDomain,
-//    ComputerNameDnsFullyQualified,
-//    ComputerNamePhysicalNetBIOS,
-//    ComputerNamePhysicalDnsHostname,
-//    ComputerNamePhysicalDnsDomain,
-//    ComputerNamePhysicalDnsFullyQualified,
-//    ComputerNameMax
-//  );
-//  
-//  function GetComputerNameEx(NameType: TComputerNameFormat; lpBuffer: string; var nSize: DWORD): BOOL;
-//  external 'GetComputerNameEx{#AW}@kernel32.dll stdcall';
-
-//function TryGetComputerName(Format: TComputerNameFormat; out Output: string): Boolean;
-//var
-//  BufLen: DWORD;
-//begin
-//  Result := False;
-//  BufLen := 0;
-//  if not Boolean(GetComputerNameEx(Format, '', BufLen)) and (DLLGetLastError = ERROR_MORE_DATA) then
-//  begin
-//    SetLength(Output, BufLen);
-//    Result := GetComputerNameEx(Format, Output, BufLen);
-//  end;    
-//end;
-
-
-
-
-
-
-
-
 {_______________________________________________________________________________________________________________________________}
         
-{ Procedure voor aanmaak van pagina voor ingave van technieker naam }
+{ Procedure voor aanmaak nieuwe pagina }
 procedure AddCustomQueryPage();
 begin
   CustomQueryPage := CreateInputQueryPage(wpWelcome,
@@ -340,32 +277,13 @@ begin
   CustomQueryPage.Add('Initialen: ', False);
 end;
 
-
-{ Procedure voor aanmaak van pagina voor ingave nieuwe computer naam }
-procedure AddCustomQueryPage2();
-begin
-  CustomQueryPageHostname := CreateInputQueryPage(wpSelectTasks,
-    'Naam computer',
-    'Indien de computernaam moet gewijzigd worden (bv. voor herkenning in het netwerk),' + #13#10 + 'pas onderstaande naam aan.',
-    'Laat dit ongewijzigd zodat de standaard naam behouden blijft (SCM-PC).' + #13#10 + 'Bij wijziging, gebruik maximaal 15 tekens, geen spaties en geen symbolen.');
-
-{ Add items (False means it's not a password edit) }
-CustomQueryPageHostname.Add('Computer naam: ', False);
-        // Set initial values (optional)
-CustomQueryPageHostname.Values[0] := ExpandConstant('{computername}');
-end;
-
 {_______________________________________________________________________________________________________________________________}
 
 procedure InitializeWizard();
 begin
 
-{ PC naam opvragen bij starten van de wizard - hergebruiken bij "AddCustomQueryPage2" }
-// if TryGetComputerName(ComputerNameDnsFullyQualified, Name) then
-//    MsgBox(Name, mbInformation, MB_OK);
-
-{ Pagina na "wpWelcome" voor invullen van technieker initialen }
-AddCustomQueryPage();  
+{ Pagina na "wpWelcome" voor invullen van initialen = "CustomQueryPage" }
+  AddCustomQueryPage();  
 
 { Pagina  na 'selectie van opdrachten' voor taalwijziging }
 CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. [Win10 Enterprise 2016 LTSB - versie 1607 - build 14393.0]' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
@@ -383,9 +301,6 @@ CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toe
   FR := CheckListBox.AddRadioButton('Windows taal wijzigen: FRANS', '', 0, False, True, nil);
         FR1 := CheckListBox.AddRadioButton('QWERTY toetsenbord (SCM origineel)', '', 1, False, True, nil);
         FR2 := CheckListBox.AddRadioButton('AZERTY toetsenbord', '', 1, False, True, nil);
-
-{ Pagina na "CustomLanguagePage" voor wijziging van de computer naam }
-AddCustomQueryPage2();
 
 end;
 
@@ -450,30 +365,12 @@ end;
 
 {_______________________________________________________________________________________________________________________________}
 
+{ Procedure om input (naam) van gebruiker opnieuw te gebruiken voor aanmaak van map - Map maken met : datum van vandaag + spatie + initialen van technieker (gebruiker ingave) }
 procedure CurStepChanged(CurStep: TSetupStep);
+
 begin
    if CurStep = ssPostInstall then   
      begin
-     { Procedure om input (naam) van gebruiker opnieuw te gebruiken voor aanmaak van map - Map maken met : datum van vandaag + spatie + initialen van technieker (gebruiker ingave) }
-     CreateDir('C:\ROGIERS\BACKUPS\' + DateTime + ' ' + UserInputName);
-
-      { Procedure om input (computernaam) te gebruiken voor wijziging van PC naam - RESTART REQUIRED }
-      ///////// Kunnen er argumenten worden meegestuurd in onderstaande powershell run?? Misschien kan op die manier de user input 'computernaam' als argument hieronder meegestuurd worden ????
-      //Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode); 
-      Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1"""&"" -param1""&"" UserInputComputerName"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode); 
-     
-
-      //     $ComputerName
-     //      UserInputComputerName
-     
-     
+     CreateDir('C:\ROGIERS\BACKUPS\' + DateTime + ' ' + UserInput);
      end;
   end;
-
-
-
-
-
-
-
-
