@@ -1,6 +1,5 @@
 # Script to modify the hostname of the computer
 # ---------------------------------------------
 
-param1 ($ComputerName)
-Rename-Computer -NewName $ComputerName -LocalCredential localhostAdminUser  
-
+$NewComputerName=$args[0]
+Rename-Computer -NewName $NewComputerName -Force

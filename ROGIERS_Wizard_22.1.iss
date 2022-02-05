@@ -64,6 +64,7 @@ Name: "ScriptsUitvoeren"; Description: "Powershell scripts uitvoeren [visuele ef
 Name: "EnableWindowsRestorePoint"; Description: "Script uitvoeren om Windows herstelpunten te activeren"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "ChocolateyApps"; Description: "Chocolatey : Apps installeren [Google Chrome, Notepad++, 7-Zip, CutePDF, IrfanView, Greenshot]"; GroupDescription: "Extra software :"; Components: Chocolatey
 Name: "MapNetwerkDrives"; Description: "Bestand in Windows startup kopiëren om netwerkschijven te 'mappen'"; GroupDescription: "Voor softwaremensen :"; Flags: unchecked; Components: Volledig Beperkt
+Name: "ChangePCname"; Description: "Wijzig de Windows computernaam"; GroupDescription: "Voor softwaremensen :"; Flags: unchecked; Components: Volledig Beperkt
 
 [Languages]
 Name: "dutch"; MessagesFile: "compiler:Languages\Dutch.isl"
@@ -78,18 +79,14 @@ Source: "DATA\INSTALL\ROGIERS Wizard\*"; DestDir: "{app}\INSTALL\ROGIERS Wizard\
 ; Bestanden naar TEMP folder kopiëren :
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-;;;;;;;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\06___CreateRogiersPDFManualShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
-
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
@@ -103,7 +100,6 @@ Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1";
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL1
 ; //// Bij 'BeforeInstall' mag hier maar één file geschreven worden, anders wordt bij uitvoeren van de procedure meermaals de MSGBOX + EXEC uitgevoerd ........
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL2
-
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR1
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_FR2
 ; _______________________________________________________________________________________________________________________________
@@ -117,7 +113,6 @@ Filename: "powershell.exe"; \
     Flags: waituntilterminated runhidden; \
     Components: Beperkt Volledig; \
     Tasks: InstallatieTotalCommander
-
 ; _______________________________________________________________________________________________________________________________
 
 ; Windows Defender uitzonderingen toevoegen :
@@ -178,13 +173,6 @@ Filename: "powershell.exe"; \
     Components: Beperkt Volledig; \
     Tasks: ScriptsUitvoeren
 
-;;;Filename: "powershell.exe"; \
-;;;    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\06___CreateRogiersPDFManualShortcut.ps1"""; \
-;;;    WorkingDir: "{app}"; \
-;;;    Flags: runhidden; \
-;;;;    Components: Beperkt Volledig; \
-;;;    Tasks: ScriptsUitvoeren
-
 Filename: "powershell.exe"; \
     Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\14___SetDefaultFileExtensions.ps1"""; \
     WorkingDir: "{app}"; \
@@ -202,7 +190,6 @@ Filename: "powershell.exe"; \
 ; _______________________________________________________________________________________________________________________________
 
 ; Script voor uitvoeren van "Chocolatey" package manager :
-
 Filename: "powershell.exe"; \
     Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___ChocolateyInstallPackage.ps1"""; \
     WorkingDir: "{app}"; \
@@ -229,7 +216,6 @@ Filename: "powershell.exe"; \
 ; _______________________________________________________________________________________________________________________________
 
 ; Custom code (Pascal scripting)...
-
 [ThirdParty]
 CompileLogFile=.\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
 
@@ -238,6 +224,7 @@ CompileLogFile=.\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
 [Code]
 
 var
+CustomPageID: Integer;                                                                 // Gebruikt om pagina's over te slaan
 CustomQueryPage: TInputQueryWizardPage;                           // Om de naam van de technieker te kunnen invullen
 CustomQueryPageHostname: TInputQueryWizardPage;        // Om de computer naam te veranderen
 Name: string;                                                                                   // Computernaam opvragen
@@ -269,67 +256,31 @@ ResultCode: Integer;
         begin
             Result := CustomQueryPageHostname.Values[0];
         end;        
+{_______________________________________________________________________________________________________________________________}
+
+{ Prevent user from typing spaces in the textbox ... }
+procedure EditKeyPress(Sender: TObject; var Key: Char);
+begin
+    if (Key in ['@', '^','_', '*', '\', #32]) then  { #32 is space }
+    Key := #0;
+end;
+
+{ ... but check anyway if some spaces were sneaked in (e.g. by pasting from a clipboard) }
+function ValidateInput(Sender: TWizardPage): Boolean;
+begin
+  Result := True;
+
+  if Pos(' ', CustomQueryPageHostname.Values[0]) > 0 then
+  begin
+    MsgBox('Kopieer- en plak praktijken niet toegestaan in dit veld...' + #13#10 + 'De naam mag GEEN spaties bevatten!', mbError, MB_OK);
+    Result := False;
+  end;
+end;
 
 {_______________________________________________________________________________________________________________________________}
-     
 
-
-
-
-
-
-
-{ Procedure voor achterhalen van de computernaam }
-     
-//#ifdef UNICODE
-//  #define AW "W"
-//#else
-//  #define AW "A"
-//#endif
-//
-//const
-//  ERROR_MORE_DATA = 234;
-//
-//type
-//  TComputerNameFormat = (
-//    ComputerNameNetBIOS,
-//    ComputerNameDnsHostname,
-//    ComputerNameDnsDomain,
-//    ComputerNameDnsFullyQualified,
-//    ComputerNamePhysicalNetBIOS,
-//    ComputerNamePhysicalDnsHostname,
-//    ComputerNamePhysicalDnsDomain,
-//    ComputerNamePhysicalDnsFullyQualified,
-//    ComputerNameMax
-//  );
-//  
-//  function GetComputerNameEx(NameType: TComputerNameFormat; lpBuffer: string; var nSize: DWORD): BOOL;
-//  external 'GetComputerNameEx{#AW}@kernel32.dll stdcall';
-
-//function TryGetComputerName(Format: TComputerNameFormat; out Output: string): Boolean;
-//var
-//  BufLen: DWORD;
-//begin
-//  Result := False;
-//  BufLen := 0;
-//  if not Boolean(GetComputerNameEx(Format, '', BufLen)) and (DLLGetLastError = ERROR_MORE_DATA) then
-//  begin
-//    SetLength(Output, BufLen);
-//    Result := GetComputerNameEx(Format, Output, BufLen);
-//  end;    
-//end;
-
-
-
-
-
-
-
-
-{_______________________________________________________________________________________________________________________________}
-        
 { Procedure voor aanmaak van pagina voor ingave van technieker naam }
-procedure AddCustomQueryPage();
+procedure CustomInputPageTechnicianName();
 begin
   CustomQueryPage := CreateInputQueryPage(wpWelcome,
     'Naam technieker',
@@ -340,53 +291,62 @@ begin
   CustomQueryPage.Add('Initialen: ', False);
 end;
 
-
 { Procedure voor aanmaak van pagina voor ingave nieuwe computer naam }
-procedure AddCustomQueryPage2();
+procedure CustomInputPageComputerName();
 begin
   CustomQueryPageHostname := CreateInputQueryPage(wpSelectTasks,
     'Naam computer',
-    'Indien de computernaam moet gewijzigd worden (bv. voor herkenning in het netwerk),' + #13#10 + 'pas onderstaande naam aan.',
-    'Laat dit ongewijzigd zodat de standaard naam behouden blijft (SCM-PC).' + #13#10 + 'Bij wijziging, gebruik maximaal 15 tekens, geen spaties en geen symbolen.');
+    'Wijzig onderstaande indien de computernaam moet gewijzigd worden' + #13#10 + '(bv. voor herkenning in het netwerk).',
+    'Laat dit ongewijzigd zodat de standaard naam behouden blijft (SCM-PC).' + #13#10 + 'Het invoerveld is gelimiteerd tot max. 15 tekens [Max NetBIOS naam].');
+CustomPageID := CustomQueryPageHostname.ID;
 
+{ Input van nieuwe computernaam valideren }
+CustomQueryPageHostname.OnNextButtonClick := @ValidateInput;
 { Add items (False means it's not a password edit) }
-CustomQueryPageHostname.Add('Computer naam: ', False);
-        // Set initial values (optional)
+CustomQueryPageHostname.Add('Computernaam: ', False);
+{ Standaard value van het veld invullen }
 CustomQueryPageHostname.Values[0] := ExpandConstant('{computername}');
+{ Input van nieuwe computernaam limiteren zodat geen speciale tekens in netBIOS naam komen te staan }
+CustomQueryPageHostname.Edits[0].MaxLength := 15;
+CustomQueryPageHostname.Edits[0].OnKeyPress := @EditKeyPress;
+end;
+
+function ShouldSkipPage(PageID: Integer): Boolean;
+begin
+  { initialize result to not skip any page (not necessary, but safer) }
+  Result := False;
+  { if the page that is asked to be skipped is your custom page, then... }
+  if PageID = CustomPageID then
+    { if the component is not selected, skip the page }
+    Result := not IsTaskSelected('ChangePCname');
 end;
 
 {_______________________________________________________________________________________________________________________________}
 
 procedure InitializeWizard();
 begin
-
-{ PC naam opvragen bij starten van de wizard - hergebruiken bij "AddCustomQueryPage2" }
-// if TryGetComputerName(ComputerNameDnsFullyQualified, Name) then
-//    MsgBox(Name, mbInformation, MB_OK);
-
 { Pagina na "wpWelcome" voor invullen van technieker initialen }
-AddCustomQueryPage();  
+CustomInputPageTechnicianName();  
+
+{ Pagina na "CustomLanguagePage" voor wijziging van de computer naam }
+CustomInputPageComputerName();
 
 { Pagina  na 'selectie van opdrachten' voor taalwijziging }
 CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. [Win10 Enterprise 2016 LTSB - versie 1607 - build 14393.0]' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
 
-  CheckListBox := TNewCheckListBox.Create(CustomLanguagePage);
-  CheckListBox.Width := CustomLanguagePage.SurfaceWidth;
-  CheckListBox.Height := ScaleY(118);
-  CheckListBox.Flat := True;
-  CheckListBox.Parent := CustomLanguagePage.Surface;
+        CheckListBox := TNewCheckListBox.Create(CustomLanguagePage);
+        CheckListBox.Width := CustomLanguagePage.SurfaceWidth;
+        CheckListBox.Height := ScaleY(118);
+        CheckListBox.Flat := True;
+        CheckListBox.Parent := CustomLanguagePage.Surface;
 
-  NW := CheckListBox.AddRadioButton('Niet wijzigen', '', 0, True, True, nil);
-  NL := CheckListBox.AddRadioButton('Windows taal wijzigen: NEDERLANDS', '', 0, False, True, nil);
-        NL1 := CheckListBox.AddRadioButton('QWERTY toetsenbord (SCM origineel)', '', 1, False, True, nil);
-        NL2 := CheckListBox.AddRadioButton('AZERTY toetsenbord', '', 1, False, True, nil);
-  FR := CheckListBox.AddRadioButton('Windows taal wijzigen: FRANS', '', 0, False, True, nil);
-        FR1 := CheckListBox.AddRadioButton('QWERTY toetsenbord (SCM origineel)', '', 1, False, True, nil);
-        FR2 := CheckListBox.AddRadioButton('AZERTY toetsenbord', '', 1, False, True, nil);
-
-{ Pagina na "CustomLanguagePage" voor wijziging van de computer naam }
-AddCustomQueryPage2();
-
+            NW := CheckListBox.AddRadioButton('Niet wijzigen', '', 0, True, True, nil);
+            NL := CheckListBox.AddRadioButton('Windows taal wijzigen: NEDERLANDS', '', 0, False, True, nil);
+                  NL1 := CheckListBox.AddRadioButton('QWERTY toetsenbord (SCM origineel)', '', 1, False, True, nil);
+                  NL2 := CheckListBox.AddRadioButton('AZERTY toetsenbord', '', 1, False, True, nil);
+            FR := CheckListBox.AddRadioButton('Windows taal wijzigen: FRANS', '', 0, False, True, nil);
+                  FR1 := CheckListBox.AddRadioButton('QWERTY toetsenbord (SCM origineel)', '', 1, False, True, nil);
+                  FR2 := CheckListBox.AddRadioButton('AZERTY toetsenbord', '', 1, False, True, nil);
 end;
 
 {_______________________________________________________________________________________________________________________________}
@@ -457,23 +417,11 @@ begin
      { Procedure om input (naam) van gebruiker opnieuw te gebruiken voor aanmaak van map - Map maken met : datum van vandaag + spatie + initialen van technieker (gebruiker ingave) }
      CreateDir('C:\ROGIERS\BACKUPS\' + DateTime + ' ' + UserInputName);
 
-      { Procedure om input (computernaam) te gebruiken voor wijziging van PC naam - RESTART REQUIRED }
-      ///////// Kunnen er argumenten worden meegestuurd in onderstaande powershell run?? Misschien kan op die manier de user input 'computernaam' als argument hieronder meegestuurd worden ????
-      //Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode); 
-      Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1"""&"" -param1""&"" UserInputComputerName"""', '', SW_SHOW, ewWaitUntilTerminated, ResultCode); 
-     
+     { Procedure om input (computernaam) te gebruiken voor wijziging van PC naam - Enkel computernaam wijzigen / PS script draaien ALS checkbox bij 'tasks' - 'voor softwaremensen' geselecteerd is }
+            //Exec('powershell','-ExecutionPolicy Bypass """C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1""" -$NewComputerName' + UserInputComputerName, '', SW_SHOW, ewWaitUntilTerminated, ResultCode); 
+            //Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1""" -$NewComputerName' + UserInputComputerName, '', SW_SHOW, ewWaitUntilTerminated, ResultCode); 
 
-      //     $ComputerName
-     //      UserInputComputerName
-     
-     
+      // if IsTaskSelected('ChangePCname') then
+      Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1"""' + UserInputComputerName, '', SW_HIDE, ewWaitUntilTerminated, ResultCode);   
      end;
   end;
-
-
-
-
-
-
-
-
