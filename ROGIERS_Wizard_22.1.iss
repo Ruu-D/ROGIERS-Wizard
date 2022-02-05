@@ -39,7 +39,6 @@ AlwaysRestart=True
 InternalCompressLevel=ultra64
 SolidCompression=True
 Compression=lzma2/ultra64
-WizardStyle=modern
 VersionInfoVersion=22.1
 MinVersion=0,6.1
 ShowTasksTreeLines=True
@@ -47,7 +46,7 @@ UsePreviousSetupType=False
 UsePreviousTasks=False
 UsePreviousLanguage=False
 ShowComponentSizes=False
-WizardResizable=False
+WizardStyle=modern
 
 [Types]
 Name: "Volledig"; Description: "Volledige installatie   (internet vereist)"Name: "Beperkt"; Description: "Essentiële bestanden"
@@ -216,6 +215,7 @@ Filename: "powershell.exe"; \
 ; _______________________________________________________________________________________________________________________________
 
 ; Custom code (Pascal scripting)...
+
 [ThirdParty]
 CompileLogFile=.\DATA\INSTALL\ROGIERS Wizard\Install_log.txt
 
