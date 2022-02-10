@@ -61,6 +61,7 @@ Name: "ChangeWallpaper"; Description: "ROGIERS Wallpaper instellen"; GroupDescri
 Name: "InstallatieTotalCommander"; Description: "Installatie Total Commander [silent]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "ScriptsUitvoeren"; Description: "Powershell scripts uitvoeren [visuele effecten, snelkoppelingen maken, handleidingen kopiëren, ...]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "EnableWindowsRestorePoint"; Description: "Script uitvoeren om Windows herstelpunten te activeren"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
+Name: "AddBGInfo"; Description: "Systeeminformatie op bureaublad tonen [BGInfo]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "ChocolateyApps"; Description: "Chocolatey : Apps installeren [Google Chrome, Notepad++, 7-Zip, CutePDF, IrfanView, Greenshot]"; GroupDescription: "Extra software :"; Components: Chocolatey
 Name: "MapNetwerkDrives"; Description: "Bestand in Windows startup kopiëren om netwerkschijven te 'mappen'"; GroupDescription: "Voor softwaremensen :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "ChangePCname"; Description: "Wijzig de Windows computernaam"; GroupDescription: "Voor softwaremensen :"; Flags: unchecked; Components: Volledig Beperkt
@@ -89,6 +90,7 @@ Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
 ; _______________________________________________________________________________________________________________________________
 ; Chocolatey packages :
@@ -211,6 +213,14 @@ Filename: "powershell.exe"; \
     WorkingDir: "{app}"; \
     Components: Beperkt Volledig; \
     Tasks: EnableWindowsRestorePoint
+
+; Script uitvoeren om 'BGInfo' op het bureaublad te tonen [shortcut copy naar Windows startup] :
+Filename: "powershell.exe"; \
+    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\17___AddBGInfo.ps1"""; \
+    WorkingDir: "{app}"; \
+    Flags: runhidden; \
+    Components: Beperkt Volledig; \
+    Tasks: AddBGInfo
 
 ; _______________________________________________________________________________________________________________________________
 

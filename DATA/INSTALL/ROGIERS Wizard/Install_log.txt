@@ -1,4 +1,4 @@
-Starting compile.  [zaterdag, februari 05 2022 at 22:27:33]
+Starting compile.  [donderdag, februari 10 2022 at 20:59:52]
 Compiling script with Inno Setup 6.2.0 [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -50,11 +50,11 @@ Preparing Setup program executable
    Updating icons (SETUP.E32)
    Updating version info (SETUP.E32)
 Determining language code pages
-Parsing [Languages] section, line 70
+Parsing [Languages] section, line 71
    Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\Dutch.isl
    Messages in script file
 Reading default messages from Default.isl
-Parsing [Languages] section, line 70
+Parsing [Languages] section, line 71
    Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\Dutch.isl
 Parsing [LangOptions], [Messages], and [CustomMessages] sections
    Messages in script file
@@ -71,60 +71,63 @@ Parsing [Tasks] section, line 64
 Parsing [Tasks] section, line 65
 Parsing [Tasks] section, line 66
 Parsing [Tasks] section, line 67
-Parsing [Run] section, line 110
-Parsing [Run] section, line 119
-Parsing [Run] section, line 126
-Parsing [Run] section, line 134
-Parsing [Run] section, line 141
-Parsing [Run] section, line 148
-Parsing [Run] section, line 155
-Parsing [Run] section, line 162
-Parsing [Run] section, line 169
-Parsing [Run] section, line 176
-Parsing [Run] section, line 183
-Parsing [Run] section, line 193
-Parsing [Run] section, line 202
-Parsing [Run] section, line 210
-Parsing [Files] section, line 74
-Parsing [Files] section, line 76
-Parsing [Files] section, line 80
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
+Parsing [Tasks] section, line 68
+Parsing [Run] section, line 112
+Parsing [Run] section, line 121
+Parsing [Run] section, line 128
+Parsing [Run] section, line 136
+Parsing [Run] section, line 143
+Parsing [Run] section, line 150
+Parsing [Run] section, line 157
+Parsing [Run] section, line 164
+Parsing [Run] section, line 171
+Parsing [Run] section, line 178
+Parsing [Run] section, line 185
+Parsing [Run] section, line 195
+Parsing [Run] section, line 204
+Parsing [Run] section, line 212
+Parsing [Run] section, line 219
+Parsing [Files] section, line 75
+Parsing [Files] section, line 77
 Parsing [Files] section, line 81
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
 Parsing [Files] section, line 82
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers.ps1
 Parsing [Files] section, line 83
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
 Parsing [Files] section, line 84
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1
 Parsing [Files] section, line 85
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1
 Parsing [Files] section, line 86
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1
 Parsing [Files] section, line 87
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
 Parsing [Files] section, line 88
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
 Parsing [Files] section, line 89
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
 Parsing [Files] section, line 90
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
 Parsing [Files] section, line 91
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
 Parsing [Files] section, line 92
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+Parsing [Files] section, line 93
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
-Parsing [Files] section, line 96
+Parsing [Files] section, line 94
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1
+Parsing [Files] section, line 98
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1
-Parsing [Files] section, line 100
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
 Parsing [Files] section, line 102
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
-Parsing [Files] section, line 103
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
 Parsing [Files] section, line 104
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
+Parsing [Files] section, line 105
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+Parsing [Files] section, line 106
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
-Deleting ROGIERS Wizard 22.1.exe from output directory
 Creating setup files
    Updating icons (SETUP.EXE)
    Compressing: C:\ROGIERS-Wizard\DATA\DAGRAPPORT.txt
@@ -207,8 +210,11 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\MapNetworkdrives.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\XCopy.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo.exe
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo_ROGIERS.bgi
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\dotnet_versioncheck_2020.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Microsoft DBGView.exe
@@ -223,12 +229,12 @@ Creating setup files
    Updating version info (SETUP.EXE)
 
 Warning: Minimum NT version is set to 6.1 but using 6.1sp1 instead (which is the default) is recommended.
-Warning: Line 322, Column 19: [Hint] Support function "IsTaskSelected" has been renamed. Use "WizardIsTaskSelected" instead.
-Warning: Line 231, Column 1: [Hint] Variable 'NAME' never used
-Warning: Line 238, Column 1: [Hint] Variable 'ERRORCODE' never used
+Warning: Line 332, Column 19: [Hint] Support function "IsTaskSelected" has been renamed. Use "WizardIsTaskSelected" instead.
+Warning: Line 241, Column 1: [Hint] Variable 'NAME' never used
+Warning: Line 248, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing.
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zaterdag, februari 05 2022 at 22:28:07]
-Total compile time: 00:33,875
+Compile finished.  [donderdag, februari 10 2022 at 21:00:26]
+Total compile time: 00:33,641
