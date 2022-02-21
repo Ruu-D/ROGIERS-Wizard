@@ -1,4 +1,4 @@
-Starting compile.  [donderdag, februari 10 2022 at 20:59:52]
+Starting compile.  [maandag, februari 21 2022 at 20:55:27]
 Compiling script with Inno Setup 6.2.0 [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -215,6 +215,7 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\XCopy.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo_ROGIERS.bgi
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo_ROGIERS_hideIPv6.vbs
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ChocolateyInstallRuntimes.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\dotnet_versioncheck_2020.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Microsoft DBGView.exe
@@ -224,7 +225,9 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp64.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR_1809.cab
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1809.cab
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
@@ -236,5 +239,5 @@ Warning: Line 248, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [donderdag, februari 10 2022 at 21:00:26]
-Total compile time: 00:33,641
+Compile finished.  [maandag, februari 21 2022 at 20:57:23]
+Total compile time: 01:55,234
