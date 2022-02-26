@@ -16,9 +16,10 @@ if($LangPacks -notcontains 'nl-NL'){
 	Write-Host 'Taalpakket "nl-NL" toevoegen...'
 	Write-Host '...'
 
-	## Installing language packs :
-	DISM /Online /Add-Package /PackagePath:"C:\ROGIERS\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL.cab"
+	## Installing language packs (not using IF logic to analyse WinVer. It will just run over the two DISM commands) :
+	DISM /Online /Add-Package /PackagePath:"C:\ROGIERS\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1607.cab"
+	DISM /Online /Add-Package /PackagePath:"C:\ROGIERS\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1809.cab"
 
 	Start-Sleep -s 2
 }
-	Copy-Item -Path "C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1_RUN_STARTUP.bat" -Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
+Copy-Item -Path "C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_ChangeLanguage_NL1_RUN_STARTUP.bat" -Destination "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"

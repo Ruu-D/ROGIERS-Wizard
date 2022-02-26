@@ -1,4 +1,4 @@
-Starting compile.  [maandag, februari 21 2022 at 21:18:06]
+Starting compile.  [zaterdag, februari 26 2022 at 12:28:39]
 Compiling script with Inno Setup 6.2.0 [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -225,8 +225,10 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.chm
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp64.exe
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR.cab
-   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR_1607.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR_1809.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1607.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1809.cab
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
@@ -238,5 +240,5 @@ Warning: Line 248, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [maandag, februari 21 2022 at 21:18:42]
-Total compile time: 00:36,172
+Compile finished.  [zaterdag, februari 26 2022 at 12:30:01]
+Total compile time: 01:22,234

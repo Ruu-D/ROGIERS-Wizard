@@ -8,5 +8,7 @@ Set-WinUILanguageOverride nl-NL
 	## If the physical keyboard layout is AZERTY :
 Set-WinUserLanguageList -LanguageList nl-BE -Force
 
+Start-Sleep -s 3
+
 Write-Host 'Instelling gewijzigd... De computer herstarten is vereist.'
 

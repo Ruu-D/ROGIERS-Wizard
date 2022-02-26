@@ -342,7 +342,7 @@ CustomInputPageTechnicianName();
 CustomInputPageComputerName();
 
 { Pagina  na 'selectie van opdrachten' voor taalwijziging }
-CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. [Win10 Enterprise 2016 LTSB - versie 1607 - build 14393.0]' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
+CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. Geschikt voor:' + #13#10 + 'Win10 LTSB - v.1607 b.14393.0 - v.1809 b.17763.107' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
 
         CheckListBox := TNewCheckListBox.Create(CustomLanguagePage);
         CheckListBox.Width := CustomLanguagePage.SurfaceWidth;
