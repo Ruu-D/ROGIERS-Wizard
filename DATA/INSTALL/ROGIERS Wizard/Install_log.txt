@@ -1,4 +1,4 @@
-Starting compile.  [zaterdag, februari 26 2022 at 12:28:39]
+Starting compile.  [vrijdag, maart 04 2022 at 14:22:36]
 Compiling script with Inno Setup 6.2.0 [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -128,7 +128,6 @@ Parsing [Files] section, line 105
 Parsing [Files] section, line 106
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
-Deleting ROGIERS Wizard 22.1.exe from output directory
 Creating setup files
    Updating icons (SETUP.EXE)
    Compressing: C:\ROGIERS-Wizard\DATA\DAGRAPPORT.txt
@@ -227,8 +226,10 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp64.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR_1607.cab
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR_1809.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\fr-FR_1909.cab
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1607.cab
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1809.cab
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1909.cab
    Compressing Setup program executable
    Updating version info (SETUP.EXE)
 
@@ -240,5 +241,5 @@ Warning: Line 248, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zaterdag, februari 26 2022 at 12:30:01]
-Total compile time: 01:22,234
+Compile finished.  [vrijdag, maart 04 2022 at 14:24:29]
+Total compile time: 01:52,829

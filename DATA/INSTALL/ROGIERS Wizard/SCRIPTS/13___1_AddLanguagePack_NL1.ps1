@@ -19,6 +19,7 @@ if($LangPacks -notcontains 'nl-NL'){
 	## Installing language packs (not using IF logic to analyse WinVer. It will just run over the two DISM commands) :
 	DISM /Online /Add-Package /PackagePath:"C:\ROGIERS\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1607.cab"
 	DISM /Online /Add-Package /PackagePath:"C:\ROGIERS\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1809.cab"
+	DISM /Online /Add-Package /PackagePath:"C:\ROGIERS\INSTALL\Windows LANGUAGES\Windows 10 Language Pack\nl-NL_1909.cab"
 
 	Start-Sleep -s 2
 }
