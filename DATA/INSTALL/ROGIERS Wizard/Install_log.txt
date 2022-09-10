@@ -1,4 +1,4 @@
-Starting compile.  [zaterdag, september 10 2022 at 11:47:23]
+Starting compile.  [zaterdag, september 10 2022 at 12:39:59]
 Compiling script with Inno Setup 6.2.0 [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -258,5 +258,5 @@ Warning: Line 261, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [zaterdag, september 10 2022 at 11:49:23]
-Total compile time: 01:59,969
+Compile finished.  [zaterdag, september 10 2022 at 12:42:36]
+Total compile time: 02:37,265
