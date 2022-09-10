@@ -198,7 +198,7 @@ Filename: "powershell.exe"; \
 Filename: "powershell.exe"; \
     Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___ChocolateyInstallPackage.ps1"""; \
     WorkingDir: "{app}"; \
-    Flags: runhidden waituntilterminated; \
+    Flags: waituntilterminated; \
     Components: Chocolatey; \
 
 ; _______________________________________________________________________________________________________________________________
