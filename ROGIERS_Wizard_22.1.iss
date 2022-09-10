@@ -32,7 +32,7 @@ WizardImageFile=.\GRAPHICS\ROGIERS_WELCOME.bmp
 WizardSmallImageFile=.\GRAPHICS\InstallWizardSmall.bmp
 DisableWelcomePage=False
 ;   "OutputDir" can change if compilation happens on another computer! All of the internal code references just follow the 'main folder'.
-OutputDir=F:\MEGASYNC\ROGIERS-Wizard\TEST VERSIES
+OutputDir=C:\MEGAsync\ROGIERS-Wizard\TEST VERSIES
 VersionInfoCompany=Rogiers Vanpoucke NV/SA
 VersionInfoCopyright=Ⓒ Daan Verhoost
 AlwaysRestart=True
