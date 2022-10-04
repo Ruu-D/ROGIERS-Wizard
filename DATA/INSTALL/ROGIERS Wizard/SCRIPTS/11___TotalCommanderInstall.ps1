@@ -1,5 +1,5 @@
 ﻿# Running Total Commander installer with arguments (described below) :
-Start-Process -Wait -ArgumentList "/A1H1L5M1G1D1U1K0" -PassThru -FilePath '"C:\ROGIERS\INSTALL\UTILITIES\tcmd1000x32_64.exe"'
+Start-Process -Wait -ArgumentList "/A1H1L5M1G1D1U1K0" -PassThru -FilePath '"C:\ROGIERS\INSTALL\UTILITIES\tcmd1051x32_64.exe"'
 	# Daan : arguments must be written without '=' and without 'spaces'.
 
 # Pass command line parameters to the unmodified installer in the form /AHLMGDUK

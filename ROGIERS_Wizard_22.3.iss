@@ -32,7 +32,7 @@ WizardImageFile=.\GRAPHICS\ROGIERS_WELCOME.bmp
 WizardSmallImageFile=.\GRAPHICS\InstallWizardSmall.bmp
 DisableWelcomePage=False
 ;   "OutputDir" can change if compilation happens on another computer! All of the internal code references just follow the 'main folder'.
-OutputDir=C:\MEGAsync\ROGIERS-Wizard\TEST VERSIES
+OutputDir=C:\Users\DVH\Downloads
 VersionInfoCompany=Rogiers Vanpoucke NV/SA
 VersionInfoCopyright=Ⓒ Daan Verhoost
 AlwaysRestart=True
@@ -47,6 +47,8 @@ UsePreviousTasks=False
 UsePreviousLanguage=False
 ShowComponentSizes=False
 WizardStyle=modern
+WizardSizePercent=140
+
 
 [Types]
 Name: "Volledig"; Description: "Volledige installatie   (internet vereist)"Name: "Beperkt"; Description: "Essentiële bestanden"
@@ -54,7 +56,7 @@ Name: "Volledig"; Description: "Volledige installatie   (internet vereist)"Name
 [Components]
 Name: "Volledig"; Description: "Volledig"; Types: Volledig; Flags: fixed
 Name: "Beperkt"; Description: "Beperkt"; Types: Beperkt; Flags: fixed
-Name: "Chocolatey"; Description: "ChocolateyPackageManager"; Types: Volledig
+Name: "ChocolateyPackages"; Description: "ChocolateyPackages"; Types: Volledig
 
 [Tasks]
 Name: "ChangeWallpaperSCM"; Description: "ROGIERS Wallpaper instellen - SCM"; GroupDescription: "Standaard :"; Flags: exclusive; Components: Volledig Beperkt
@@ -63,7 +65,10 @@ Name: "InstallatieTotalCommander"; Description: "Installatie Total Commander [si
 Name: "ScriptsUitvoeren"; Description: "Powershell scripts uitvoeren [snelkoppelingen maken, handleidingen kopiëren, ...]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "EnableWindowsRestorePoint"; Description: "Windows herstelpunten activeren"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 Name: "AddBGInfo"; Description: "Systeeminformatie op bureaublad tonen [BGInfo]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
-Name: "ChocolateyApps"; Description: "Apps installeren [Chrome, Notepad++, 7-Zip, CutePDF, IrfanView, Greenshot]"; GroupDescription: "Extra's :"; Components: Chocolatey
+
+Name: "Chocolatey_ALL"; Description: "Apps installeren [Chrome, Notepad++, 7-Zip, CutePDF, Greenshot]"; GroupDescription: "Extra's :"; Components: ChocolateyPackages
+
+Name: "PhotoviewerIRFANVIEW"; Description: "Irfanview - photo viewer installeren"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "MapNetworkDrives"; Description: "MapNetworkDrives - bestand in Windows startup kopiëren"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "CleanPrintSpooler"; Description: "CleanPrintSpooler - snelkoppeling op bureaublad kopiëren"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "SetFolderPermissionsEveryone"; Description: "SetFolderPermissionsEveryone - maprechten open zetten"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
@@ -97,11 +102,17 @@ Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1"; De
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\18___CleanPrintSpoolerShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\19___SetFolderPermissionsEveryone.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\20___IrfanviewInstall.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
 ; _______________________________________________________________________________________________________________________________
-; Chocolatey packages :
-Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___ChocolateyInstallPackage.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+; Chocolatey core + packages :
+;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_CreatePowershellProfile.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_Core.cmd"; DestDir: "{tmp}"; Permissions: everyone-full
+;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_Core.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_ALL.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+;Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_IRFANVIEW.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_RUN_EVERYTHING.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 ; _______________________________________________________________________________________________________________________________
 ; Scripts voor wijziging van Windows taal en toetsenbord /// 'MyBeforeInstall' zorgt voor link naar [Code] waarin deze files na extract gebruikt worden :
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1"; DestDir: "{tmp}"; Permissions: everyone-full; BeforeInstall: BeforeInstall_NL1
@@ -120,6 +131,13 @@ Filename: "powershell.exe"; \
     Flags: waituntilterminated runhidden; \
     Components: Beperkt Volledig; \
     Tasks: InstallatieTotalCommander
+
+Filename: "powershell.exe"; \
+    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\20___IrfanviewInstall.ps1"""; \
+    WorkingDir: "{app}"; \
+    Flags: waituntilterminated runhidden; \
+    Components: Beperkt Volledig; \
+    Tasks: PhotoviewerIRFANVIEW
 ; _______________________________________________________________________________________________________________________________
 
 ; Windows Defender uitzonderingen toevoegen :
@@ -205,10 +223,41 @@ Filename: "powershell.exe"; \
 
 ; Script voor uitvoeren van "Chocolatey" package manager :
 Filename: "powershell.exe"; \
-    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___ChocolateyInstallPackage.ps1"""; \
+    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___Chocolatey_RUN_EVERYTHING.ps1"""; \
     WorkingDir: "{app}"; \
     Flags: waituntilterminated; \
-    Components: Chocolatey; \
+    Components: ChocolateyPackages; \
+    Tasks: Chocolatey_ALL
+
+
+;;;;;CURRENTLY ISSUES WHEN SPLITTING CHOCO INSTALL AND PACKAGE INSTALLS........CHOCO INSTRUCTION NOT RECOGNISED...........
+;;;;;;;;;;;;;;;;;;;;Filename: "{tmp}\09___Chocolatey_Core.cmd"; Flags: waituntilterminated; Components: ChocolateyCore;
+
+;Filename: "powershell.exe"; \
+;   Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___Chocolatey_CreatePowershellProfile.ps1"""; \
+;    WorkingDir: "{app}"; \
+;    Flags: waituntilterminated; \
+;    Components: ChocolateyCore; \
+
+;Filename: "powershell.exe"; \
+;   Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___Chocolatey_Core.ps1"""; \
+;    WorkingDir: "{app}"; \
+;    Flags: waituntilterminated; \
+;    Components: ChocolateyCore; \
+
+;Filename: "powershell.exe"; \
+;   Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___Chocolatey_ALL.ps1"""; \
+;    WorkingDir: "{app}"; \
+;    Flags: waituntilterminated; \
+;    Components: ChocolateyPackages; \
+;    Tasks: Chocolatey_ALL
+
+;Filename: "powershell.exe"; \
+;    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\09___Chocolatey_IRFANVIEW.ps1"""; \
+;    WorkingDir: "{app}"; \
+;    Flags: waituntilterminated; \
+;    Components: ChocolateyPackages; \
+;    Tasks: Chocolatey_IRFANVIEW
 
 ; _______________________________________________________________________________________________________________________________
 
@@ -245,7 +294,6 @@ Filename: "powershell.exe"; \
     Tasks: AddBGInfo
 
 ; _______________________________________________________________________________________________________________________________
-
 ; Custom code (Pascal scripting)...
 
 [ThirdParty]
@@ -378,7 +426,7 @@ CustomInputPageTechnicianName();
 CustomInputPageComputerName();
 
 { Pagina  na 'selectie van opdrachten' voor taalwijziging }
-CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. Geschikt voor:' + #13#10 + 'Win10 LTSB - v.1607 b.14393.0 - v.1809 b.17763.107' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
+CustomLanguagePage:= CreateCustomPage(wpSelectTasks, 'Windows weergavetaal & toetsenbordindeling wijzigen', 'ENKEL mogelijk op "EYE-M" toestellen. Geschikt voor: Win10 LTSB - v.1607 b.14393.0 - v.1809 b.17763.107' + #13#10 + 'Optie NEDERLANDS zal even duren, 2 keer heropstarten is hiervoor vereist.');
 
         CheckListBox := TNewCheckListBox.Create(CustomLanguagePage);
         CheckListBox.Width := CustomLanguagePage.SurfaceWidth;
@@ -458,18 +506,23 @@ end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
 begin
-   if CurStep = ssPostInstall then   
-     begin
+   if CurStep = ssPostInstall then begin
      { Procedure om input (naam) van gebruiker opnieuw te gebruiken voor aanmaak van map - Map maken met : datum van vandaag + spatie + initialen van technieker (gebruiker ingave) }
      CreateDir('C:\ROGIERS\BACKUPS\' + DateTime + ' ' + UserInputName);
 
-              if WizardIsTaskSelected('ChangePCname') then
+              if WizardIsTaskSelected('ChangePCname') then  begin
               Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\16___ChangeComputerName.ps1"""' + UserInputComputerName, '', SW_HIDE, ewWaitUntilTerminated, ResultCode);  
-              end; 
+              end;
 
-              if WizardIsTaskSelected('SetFolderPermissionsEveryone') then
+              if WizardIsTaskSelected('SetFolderPermissionsEveryone') then begin
               Exec('powershell','-ExecutionPolicy Bypass "& ""C:\ROGIERS\INSTALL\ROGIERS Wizard\SCRIPTS\19___SetFolderPermissionsEveryone.ps1"""', '', SW_HIDE, ewWaitUntilTerminated, ResultCode); 
-              end; 
+              end;
 
+   end;
 
-  end.
+   if CurStep = ssDone then begin
+     { This is code that's being executed AFTER user clicks on the 'Finish' button! }
+
+   end;
+
+end;
