@@ -67,12 +67,14 @@ Name: "EnableWindowsRestorePoint"; Description: "Windows herstelpunten activeren
 Name: "AddBGInfo"; Description: "Systeeminformatie op bureaublad tonen [BGInfo]"; GroupDescription: "Standaard :"; Components: Volledig Beperkt
 
 Name: "Chocolatey_ALL"; Description: "Apps installeren [Chrome, Notepad++, 7-Zip, CutePDF, Greenshot]"; GroupDescription: "Extra's :"; Components: ChocolateyPackages
-
 Name: "PhotoviewerIRFANVIEW"; Description: "Irfanview - photo viewer installeren"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "MapNetworkDrives"; Description: "MapNetworkDrives - bestand in Windows startup kopiëren"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "CleanPrintSpooler"; Description: "CleanPrintSpooler - snelkoppeling op bureaublad kopiëren"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "SetFolderPermissionsEveryone"; Description: "SetFolderPermissionsEveryone - maprechten open zetten"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
 Name: "ChangePCname"; Description: "Wijzig de Windows computernaam"; GroupDescription: "Extra's :"; Flags: unchecked; Components: Volledig Beperkt
+
+Name: "MaestroCNCcreateSettingx"; Description: "Create MaestroCNC settingsx - snelkoppeling op bureaublad kopiëren"; GroupDescription: "Backup mogelijkheden :"; Flags: unchecked; Components: Volledig Beperkt
+Name: "MaestroCutcreateBackup"; Description: "Create Maestro(Active)Cut backup - snelkoppeling op bureaublad kopiëren"; GroupDescription: "Backup mogelijkheden :"; Flags: unchecked; Components: Volledig Beperkt
 
 [Languages]
 Name: "dutch"; MessagesFile: "compiler:Languages\Dutch.isl"
@@ -103,6 +105,8 @@ Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1"; DestDir: "{tmp
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\18___CleanPrintSpoolerShortcut.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\19___SetFolderPermissionsEveryone.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\20___IrfanviewInstall.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\21___StartMakeSettingsxNoUserInteraction.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
+Source: "DATA\INSTALL\ROGIERS Wizard\SCRIPTS\22___MaestroCutMakeBackup.ps1"; DestDir: "{tmp}"; Permissions: everyone-full
 
 ; _______________________________________________________________________________________________________________________________
 ; Chocolatey core + packages :
@@ -276,6 +280,22 @@ Filename: "powershell.exe"; \
     Flags: runhidden; \
     Components: Beperkt Volledig; \
     Tasks: CleanPrintSpooler
+
+; Shortcut op bureaublad plaatsen - MaestroCNCcreateSettingx :
+Filename: "powershell.exe"; \
+    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\21___StartMakeSettingsxNoUserInteraction.ps1"""; \
+    WorkingDir: "{app}"; \
+    Flags: runhidden; \
+    Components: Beperkt Volledig; \
+    Tasks: MaestroCNCcreateSettingx
+
+; Shortcut op bureaublad plaatsen - MaestroCutcreateBackup :
+Filename: "powershell.exe"; \
+    Parameters: "-ExecutionPolicy Bypass -File ""{tmp}\22___MaestroCutMakeBackup.ps1"""; \
+    WorkingDir: "{app}"; \
+    Flags: runhidden; \
+    Components: Beperkt Volledig; \
+    Tasks: MaestroCutcreateBackup
 
 ; Script uitvoeren om Windows herstelpunten te activeren :
 Filename: "powershell.exe"; \

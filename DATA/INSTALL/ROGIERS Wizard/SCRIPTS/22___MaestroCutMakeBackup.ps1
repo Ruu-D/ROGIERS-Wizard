@@ -1,11 +1,11 @@
-# Create CLEAN PRINER SPOOLER shortcut on the desktop (link from "C:\ROGIERS")
+# Create MAESTRO(ACTIVE)CUT BACKUP shortcut on the desktop (link from "C:\ROGIERS")
 
-$TargetFile = "C:\ROGIERS\INSTALL\Windows batch and script\Windows - CleanPrinterSpooler\CleanPrintSpooler.bat"
-$shortcutFile = "C:\Users\Public\Desktop\WIS Print geheugen.lnk"
+$TargetFile = "C:\ROGIERS\INSTALL\Windows batch and script\MaestroCut - CFG Backup\MaestroCut_CFG_Backup.bat"
+$shortcutFile = "C:\Users\Public\Desktop\MaestroCut Backup.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
 $shortcut.TargetPath = $TargetFile
-$shortcut.IconLocation = "C:\ROGIERS\INSTALL\Windows batch and script\Windows - CleanPrinterSpooler\CleanPrintSpooler.ico"
+$shortcut.IconLocation = "C:\ROGIERS\INSTALL\Windows batch and script\MaestroCut - CFG Backup\MActiveCut_Backup.ico"
 $shortcut.Save()
 
 

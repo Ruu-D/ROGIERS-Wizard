@@ -1,4 +1,4 @@
-Starting compile.  [maandag, november 21 2022 at 10:52:07]
+Starting compile.  [maandag, november 21 2022 at 15:48:26]
 Compiling script with Inno Setup 6.2.0 [ISDLLCompileScriptW]
 
 [PreCompile] Processing.
@@ -51,11 +51,11 @@ Preparing Setup program executable
    Updating icons (SETUP.E32)
    Updating version info (SETUP.E32)
 Determining language code pages
-Parsing [Languages] section, line 79
+Parsing [Languages] section, line 81
    Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\Dutch.isl
    Messages in script file
 Reading default messages from Default.isl
-Parsing [Languages] section, line 79
+Parsing [Languages] section, line 81
    Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\Dutch.isl
 Parsing [LangOptions], [Messages], and [CustomMessages] sections
    Messages in script file
@@ -72,76 +72,84 @@ Parsing [Tasks] section, line 66
 Parsing [Tasks] section, line 67
 Parsing [Tasks] section, line 68
 Parsing [Tasks] section, line 70
+Parsing [Tasks] section, line 71
 Parsing [Tasks] section, line 72
 Parsing [Tasks] section, line 73
 Parsing [Tasks] section, line 74
 Parsing [Tasks] section, line 75
-Parsing [Tasks] section, line 76
-Parsing [Run] section, line 129
-Parsing [Run] section, line 136
-Parsing [Run] section, line 145
-Parsing [Run] section, line 152
-Parsing [Run] section, line 159
-Parsing [Run] section, line 167
-Parsing [Run] section, line 174
-Parsing [Run] section, line 181
-Parsing [Run] section, line 188
-Parsing [Run] section, line 195
-Parsing [Run] section, line 202
-Parsing [Run] section, line 209
-Parsing [Run] section, line 216
-Parsing [Run] section, line 226
-Parsing [Run] section, line 266
-Parsing [Run] section, line 274
-Parsing [Run] section, line 282
-Parsing [Run] section, line 290
-Parsing [Files] section, line 83
+Parsing [Tasks] section, line 77
+Parsing [Tasks] section, line 78
+Parsing [Run] section, line 133
+Parsing [Run] section, line 140
+Parsing [Run] section, line 149
+Parsing [Run] section, line 156
+Parsing [Run] section, line 163
+Parsing [Run] section, line 171
+Parsing [Run] section, line 178
+Parsing [Run] section, line 185
+Parsing [Run] section, line 192
+Parsing [Run] section, line 199
+Parsing [Run] section, line 206
+Parsing [Run] section, line 213
+Parsing [Run] section, line 220
+Parsing [Run] section, line 230
+Parsing [Run] section, line 270
+Parsing [Run] section, line 278
+Parsing [Run] section, line 286
+Parsing [Run] section, line 294
+Parsing [Run] section, line 302
+Parsing [Run] section, line 310
 Parsing [Files] section, line 85
-Parsing [Files] section, line 89
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
-Parsing [Files] section, line 90
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers_SCM.ps1
+Parsing [Files] section, line 87
 Parsing [Files] section, line 91
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers_FOM.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\00___WindowsDefenderExceptions.bat
 Parsing [Files] section, line 92
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers_SCM.ps1
 Parsing [Files] section, line 93
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\08___ChangeWallpaperRogiers_FOM.ps1
 Parsing [Files] section, line 94
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\01___TaskbarNeverCombine.ps1
 Parsing [Files] section, line 95
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\02___ShowAllFileExtensions.ps1
 Parsing [Files] section, line 96
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\03___LaunchExplorerToThisPC.ps1
 Parsing [Files] section, line 97
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\04___HideTaskViewButton.ps1
 Parsing [Files] section, line 98
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\12___DisableWindowAnimation.ps1
 Parsing [Files] section, line 99
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\05___CreateRogiersAnyDeskShortcuts.ps1
 Parsing [Files] section, line 100
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\14___SetDefaultFileExtensions.ps1
 Parsing [Files] section, line 101
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\15___CreatePortalRogiersShortcut.ps1
 Parsing [Files] section, line 102
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\10___EnableWindowsRestorePoint.ps1
 Parsing [Files] section, line 103
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\07___MapNetworkDrives.ps1
 Parsing [Files] section, line 104
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\18___CleanPrintSpoolerShortcut.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\11___TotalCommanderInstall.ps1
 Parsing [Files] section, line 105
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\19___SetFolderPermissionsEveryone.ps1
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\17___AddBGInfo.ps1
 Parsing [Files] section, line 106
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\18___CleanPrintSpoolerShortcut.ps1
+Parsing [Files] section, line 107
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\19___SetFolderPermissionsEveryone.ps1
+Parsing [Files] section, line 108
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\20___IrfanviewInstall.ps1
-Parsing [Files] section, line 116
+Parsing [Files] section, line 109
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\21___StartMakeSettingsxNoUserInteraction.ps1
+Parsing [Files] section, line 110
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\22___MaestroCutMakeBackup.ps1
+Parsing [Files] section, line 120
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\09___Chocolatey_RUN_EVERYTHING.ps1
-Parsing [Files] section, line 119
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
-Parsing [Files] section, line 121
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
-Parsing [Files] section, line 122
-   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
 Parsing [Files] section, line 123
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___1_AddLanguagePack_NL1.ps1
+Parsing [Files] section, line 125
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___2_AddLanguagePack_NL2.ps1
+Parsing [Files] section, line 126
+   Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___3_ChangeLanguage_FR1.ps1
+Parsing [Files] section, line 127
    Reading version info: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\13___4_ChangeLanguage_FR2.ps1
 Compiling [Code] section
 Deleting ROGIERS Wizard 22.4.exe from output directory
@@ -239,6 +247,8 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\18___CleanPrintSpoolerShortcut.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\19___SetFolderPermissionsEveryone.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\20___IrfanviewInstall.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\21___StartMakeSettingsxNoUserInteraction.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\22___MaestroCutMakeBackup.ps1
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\ROGIERS Wizard\SCRIPTS\MapNetworkdrives.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\Bginfo_ROGIERS.bgi
@@ -252,6 +262,14 @@ Creating setup files
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.chm
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp.exe
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\UTILITIES\ProcessExplorer\procexp64.exe
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Maestro - Create Settingsx\MaestroCNC_Settingsx.ico
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Maestro - Create Settingsx\MakeSettingsx.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Maestro - Create Settingsx\MakeSettingsxNoUserInteraction.ps1
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Maestro - Create Settingsx\README.md
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Maestro - Create Settingsx\StartMakeSettingsx.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Maestro - Create Settingsx\StartMakeSettingsxNoUserInteraction.bat
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\MaestroCut - CFG Backup\MActiveCut_Backup.ico
+   Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\MaestroCut - CFG Backup\MaestroCut_CFG_Backup.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Windows - CleanPrinterSpooler\CleanPrintSpooler.bat
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Windows - CleanPrinterSpooler\CleanPrintSpooler.ico
    Compressing: C:\ROGIERS-Wizard\DATA\INSTALL\Windows batch and script\Windows - CleanPrinterSpooler\README.txt
@@ -268,12 +286,12 @@ Creating setup files
    Updating version info (SETUP.EXE)
 
 Warning: Minimum NT version is set to 6.1 but using 6.1sp1 instead (which is the default) is recommended.
-Warning: Line 416, Column 19: [Hint] Support function "IsTaskSelected" has been renamed. Use "WizardIsTaskSelected" instead.
-Warning: Line 311, Column 1: [Hint] Variable 'NAME' never used
-Warning: Line 318, Column 1: [Hint] Variable 'ERRORCODE' never used
+Warning: Line 436, Column 19: [Hint] Support function "IsTaskSelected" has been renamed. Use "WizardIsTaskSelected" instead.
+Warning: Line 331, Column 1: [Hint] Variable 'NAME' never used
+Warning: Line 338, Column 1: [Hint] Variable 'ERRORCODE' never used
 [PostCompile] Processing.
 [PostCompile] Processing is still being tested.
 [PostCompile] Processing finished.
 
-Compile finished.  [maandag, november 21 2022 at 10:53:06]
-Total compile time: 00:59,031
+Compile finished.  [maandag, november 21 2022 at 15:49:27]
+Total compile time: 01:00,547
