@@ -2,8 +2,10 @@
 # ------------------------------------------------------------------
 
 
+# Check for 32-BIT application -------------------------------------
 $Folder = 'C:\Program Files (x86)\SCM Group\Maestro'
-if (Test-Path -Path $Folder) {
+if (Test-Path -Path $Folder) 
+{
 	# Maestro CNC 32-bit version installed.
 
 	# ------------------------------------------------------------------
@@ -56,7 +58,15 @@ if (Test-Path -Path $Folder) {
 		cmd /c "ftype $extfile=""C:\Program Files (x86)\SCM Group\Maestro\ConfigurationManager.exe"" %1"
 	}
 
-} else {
+} 
+end if
+
+
+
+# Check for 64-BIT application -------------------------------------
+$Folder = 'C:\Program Files\SCM Group\Maestro'
+if (Test-Path -Path $Folder)
+{
 	# Maestro CNC 64-bit version installed.
 
 	# ------------------------------------------------------------------
@@ -110,6 +120,7 @@ if (Test-Path -Path $Folder) {
 	}
 
 }
+end if
 
 # ------------------------------------------------------------------
 # see also:
